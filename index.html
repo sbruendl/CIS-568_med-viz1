@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="styles/bootstrap.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="lib/bootstrap.js"></script>
+</head>
+
+<body>
+    <main class="d-flex flex-nowrap">
+        <div class="d-flex flex-column flex-shrink-0 p-3 text-bg-dark" style="width: 350px;height: 100vh;">
+            <a href="index.html"
+                class="d-flex align-items-center mb-3 mb-md-0 me-md-auto text-white text-decoration-none">
+                <svg class="bi pe-none me-2" width="40" height="32"></svg>
+                <span class="fs-4">Medical Visualization Group 1</span>
+            </a>
+            <hr>
+            <ul class="nav nav-pills flex-column mb-auto">
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-white active" id="home-tab" data-bs-toggle="tab"
+                        data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane"
+                        aria-selected="true">Home</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-white" id="vis1-tab" data-bs-toggle="tab"
+                        data-bs-target="#vis1-tab-pane" type="button" role="tab" aria-controls="vis1-tab-pane"
+                        aria-selected="false">Visualization 1</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                    <button class="nav-link text-white" id="vis2-tab" data-bs-toggle="tab"
+                        data-bs-target="#vis2-tab-pane" type="button" role="tab" aria-controls="vis2-tab-pane"
+                        aria-selected="false">Visualization 2</button>
+                </li>
+            </ul>
+            <hr>
+            <div class="dropdown">
+                Footer text here
+            </div>
+
+        </div>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab"
+                tabindex="0">Home content here</div>
+            <div class="tab-pane fade" id="vis1-tab-pane" role="tabpanel" aria-labelledby="vis1-tab" tabindex="0">
+                Vis1 Content Here
+            </div>
+            <div class="tab-pane fade" id="vis2-tab-pane" role="tabpanel" aria-labelledby="vis2-tab" tabindex="0">
+                Vis2 Content Here
+            </div>
+        </div>
+    </main>
+
+    <script>
+    </script>
+</body>
+
+</html>
