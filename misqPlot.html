@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang = "eng">
+    <head>
+        <meta charset="UTF-8">
+        <title>Mosquito Viz</title>
+        <script src="https://d3js.org/d3.v7.min.js"></script>
+        
+        <style>
+            svg{
+                background-color: rgb(241, 248, 180);
+                height: 100vh;
+                width: 100vw;
+            }
+        </style>
+
+
+    </head>
+
+    <body>
+        <script>
+            const margin = {top: 10, right: 30, bottom: 30, left: 60},
+                width = 900 - margin.left - margin.right,
+                height = 900 - margin.top - margin.bottom;
+            const svg = d3.select("body")
+                        .append("svg")
+                        .attr("viewbox","0 0 800 600")
+                       
+
+            const datereForm = d3.timeParse("%B %Y")
+            
+
+            data = d3.csv("https://raw.githubusercontent.com/mshea12/week7-568/main/mosquitoinfo2.csv", d=>{ 
+               
+                            return{   
+                                
+                                CollectionYear: datereForm((d.CollectionDate)),
+                                County: (d.County),
+                                Species: (d.Species),
+                                CountofCounty: (d.CountofCounty),
+                                Virus: (d.Virus),
+                                CollectionDate: new Date (d.CollectionDate)
+                            }
+
+            }).then(data=>{
+           
+           const dateRange = d3.extent(data, d=>d.CollectionDate)
+           const domainY = ([70,0])
+            console.log(dateRange)
+
+            console.log(data)
+             
+
+            const xScale = d3.scaleTime().domain(d3.extent(data, d=>d.CollectionDate)).range([20,width+790])
+            const yscale = d3.scaleLinear().domain(domainY).range([0,450])
+            
+            const xAxis = d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y")).ticks(78)
+            svg.append("g")
+                .attr("class","Xaxis")
+                .attr("transform", "translate(50,570)").call(xAxis)
+                .selectAll("text").attr("transform", "rotate(90)")  
+
+            const yAxis = d3.axisLeft().scale(yscale)
+             svg.append("g")
+                .attr("class","Axis")
+                .attr("transform",`translate(45,100)`) 
+                .call(yAxis) 
+
+            
+                const myColor = d3.scaleOrdinal().domain(d3.extent(data, d=>d.County))
+                .range(d3.schemeSet3);
+            
+            
+            
+            const scatterPlot= svg.append("g").selectAll('circles')
+            .data(data)
+            .enter()
+            .append("circle")
+            .attr("cx",d=>xScale(d.CollectionDate))
+            .attr("cy",d=>yscale(d.CountofCounty))
+            .attr("r",5)
+            .attr("fill",(function(d) {return myColor(d.County)}))
+            .attr("stroke","darkblue")
+            .attr("stroke-width",.4)
+            
+
+            })
+
+        </script>
+
+
+
+
+
+    </body>
+
+
+
+</html>
