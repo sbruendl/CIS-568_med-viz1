@@ -50,19 +50,19 @@
             console.log(data)
              
 
-            const xScale = d3.scaleTime().domain(d3.extent(data, d=>d.CollectionDate)).range([20,width+790])
-            const yscale = d3.scaleLinear().domain(domainY).range([0,450])
+            const xScale = d3.scaleTime().domain(d3.extent(data, d=>d.CollectionDate)).range([20,1200])
+            const yscale = d3.scaleLinear().domain(domainY).range([10,470])
             
-            const xAxis = d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%Y")).ticks(78)
+            const xAxis = d3.axisBottom().scale(xScale).tickFormat(d3.timeFormat("%b %Y")).ticks(32)
             svg.append("g")
-                .attr("class","Xaxis")
-                .attr("transform", "translate(50,570)").call(xAxis)
-                .selectAll("text").attr("transform", "rotate(90)")  
+                .attr("class","Axis")
+                .attr("transform", "translate(10,570)").call(xAxis)
+                .selectAll("text").attr("transform","translate(-10,10)rotate(-45)")
 
             const yAxis = d3.axisLeft().scale(yscale)
              svg.append("g")
                 .attr("class","Axis")
-                .attr("transform",`translate(45,100)`) 
+                .attr("transform",`translate(30,100)`) 
                 .call(yAxis) 
 
             
@@ -75,12 +75,13 @@
             .data(data)
             .enter()
             .append("circle")
-            .attr("cx",d=>xScale(d.CollectionDate))
+            .attr("cx",d=> xScale(d.CollectionDate))
             .attr("cy",d=>yscale(d.CountofCounty))
-            .attr("r",5)
+            .attr("r",8)
             .attr("fill",(function(d) {return myColor(d.County)}))
             .attr("stroke","darkblue")
             .attr("stroke-width",.4)
+            
             
 
             })
