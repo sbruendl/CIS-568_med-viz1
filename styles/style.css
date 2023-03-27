@@ -38,7 +38,7 @@ body{
     width: 90vw;
     height: 80vh;
 }
-#canvas
+#geo
 {
     height: 100vh;
     background-color: azure;
@@ -46,4 +46,10 @@ body{
 path.path_geo{
     stroke-width: .5px;
     stroke: black;
+}
+
+/*viz2*/
+#bubble{
+    background-color: rgb(241, 248, 180);
+    height: 100vh;
 }
