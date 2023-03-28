@@ -1,0 +1,54 @@
+State,County,fipscode,Year,COUNT
+CT,Fairfield County,09001,2016,38
+CT,Hartford County,09003,2016,26
+CT,Hartford County,09003,2017,1
+CT,Litchfield County,09005,2016,8
+CT,Litchfield County,09005,2017,1
+CT,Middlesex County,09007,2016,4
+CT,New Haven County,09009,2016,30
+CT,New Haven County,09009,2017,5
+CT,New London County,09011,2016,5
+CT,New London County,09011,2017,1
+CT,Tolland County,09013,2016,2
+CT,Windham County,09015,2016,5
+MA,Bristol County,25005,2016,2
+MA,Essex County,25009,2016,29
+MA,Essex County,25009,2017,2
+MA,Franklin County,25011,2016,1
+MA,Hampden County,25013,2016,4
+MA,Middlesex County,25017,2016,22
+MA,Middlesex County,25017,2017,5
+MA,Middlesex County,25017,2018,1
+MA,Norfolk County,25021,2016,3
+MA,Norfolk County,25021,2017,1
+MA,Plymouth County,25023,2016,6
+MA,Plymouth County,25023,2017,1
+MA,Suffolk County,25025,2016,39
+MA,Suffolk County,25025,2017,3
+MA,Worcester County,25027,2016,13
+ME,Aroostook County,23003,2016,1
+ME,Cumberland County,23005,2016,3
+ME,Hancock County,23009,2016,1
+ME,Kennebec County,23011,2016,1
+ME,Lincoln County,23015,2016,1
+ME,Oxford County,23017,2016,3
+ME,Waldo County,23027,2016,1
+ME,York County,23031,2016,1
+ME,York County,23031,2017,1
+NH,Hillsborough County,33011,2016,7
+NH,Merrimack County,33013,2016,2
+NH,Rockingham County,33015,2016,2
+RI,Kent County,44003,2016,4
+RI,Kent County,44003,2017,1
+RI,Newport County,44005,2016,1
+RI,Newport County,44005,2017,1
+RI,Providence County,44007,2016,48
+RI,Providence County,44007,2017,1
+RI,Washington County,44009,2016,2
+VT,Caledonia County,50005,2016,2
+VT,Caledonia County,50005,2017,2
+VT,Chittenden County,50007,2016,6
+VT,Lamoille County,50015,2017,2
+VT,Orange County,50017,2016,1
+VT,Rutland County,50021,2016,1
+VT,Windham County,50025,2016,1
