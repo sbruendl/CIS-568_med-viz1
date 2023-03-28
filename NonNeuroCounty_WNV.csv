@@ -1,0 +1,86 @@
+State,County,fipscode,Year,COUNT
+CT,Fairfield County,09001,2002,3
+CT,Fairfield County,09001,2003,1
+CT,Fairfield County,09001,2004,1
+CT,Fairfield County,09001,2005,2
+CT,Fairfield County,09001,2008,3
+CT,Fairfield County,09001,2010,3
+CT,Fairfield County,09001,2011,1
+CT,Fairfield County,09001,2012,5
+CT,Fairfield County,09001,2013,3
+CT,Fairfield County,09001,2014,3
+CT,Fairfield County,09001,2015,2
+CT,Fairfield County,09001,2017,1
+CT,Fairfield County,09001,2018,2
+CT,Fairfield County,09001,2020,2
+CT,Fairfield County,09001,2021,1
+CT,Hartford County,09003,2002,2
+CT,Hartford County,09003,2003,1
+CT,Hartford County,09003,2006,1
+CT,Hartford County,09003,2010,1
+CT,Hartford County,09003,2012,1
+CT,Hartford County,09003,2018,1
+CT,Hartford County,09003,2021,1
+CT,Middlesex County,09007,2018,1
+CT,New Haven County,09009,2002,2
+CT,New Haven County,09009,2003,2
+CT,New Haven County,09009,2006,1
+CT,New Haven County,09009,2007,2
+CT,New Haven County,09009,2012,3
+CT,New Haven County,09009,2018,1
+CT,New Haven County,09009,2020,1
+CT,New London County,09011,2003,1
+CT,,9001,2000,1
+MA,Barnstable County,25001,2007,1
+MA,Barnstable County,25001,2018,1
+MA,Bristol County,25005,2003,1
+MA,Bristol County,25005,2012,1
+MA,Bristol County,25005,2016,1
+MA,Bristol County,25005,2019,1
+MA,Essex County,25009,2003,1
+MA,Essex County,25009,2016,1
+MA,Essex County,25009,2018,1
+MA,Essex County,25009,2021,1
+MA,Franklin County,25011,2016,1
+MA,Middlesex County,25017,2002,3
+MA,Middlesex County,25017,2005,2
+MA,Middlesex County,25017,2006,1
+MA,Middlesex County,25017,2012,5
+MA,Middlesex County,25017,2013,1
+MA,Middlesex County,25017,2014,1
+MA,Middlesex County,25017,2016,3
+MA,Middlesex County,25017,2017,1
+MA,Middlesex County,25017,2018,5
+MA,Middlesex County,25017,2019,1
+MA,Middlesex County,25017,2020,2
+MA,Middlesex County,25017,2021,1
+MA,Norfolk County,25021,2012,1
+MA,Norfolk County,25021,2016,1
+MA,Norfolk County,25021,2020,1
+MA,Plymouth County,25023,2019,1
+MA,Suffolk County,25025,2002,1
+MA,Suffolk County,25025,2007,1
+MA,Suffolk County,25025,2015,3
+MA,Worcester County,25027,2003,3
+MA,Worcester County,25027,2007,1
+MA,Worcester County,25027,2010,1
+MA,Worcester County,25027,2011,1
+MA,Worcester County,25027,2012,1
+ME,Cumberland County,23005,2018,1
+NH,Rockingham County,33015,2003,1
+NH,Rockingham County,33015,2017,1
+RI,Bristol County,44001,2007,1
+RI,Kent County,44003,2003,1
+RI,Newport County,44005,2012,1
+RI,Newport County,44005,2018,1
+RI,Providence County,44007,2003,1
+RI,Providence County,44007,2017,1
+RI,Washington County,44009,2012,1
+RI,Washington County,44009,2021,1
+VT,Addison County,50001,2003,2
+VT,Essex County,50009,2012,1
+VT,Franklin County,50011,2002,1
+VT,Grand Isle County,50013,2017,1
+VT,Lamoille County,50015,2013,1
+VT,Rutland County,50021,2012,1
+VT,Windham County,50025,2003,1
