@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Take 3 Map</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+    <script src="https://d3js.org/topojson.v2.min.js"></script>
+    <style>
+        .geoPath{
+            fill:none;
+            stroke:black;
+            outline:bisque; 
+            stroke-width: .1em;
+        }
+        body{
+            margin: 0%;
+        }
+    </style>
+</head>
+<body>
+
+<script>
+    const svg = d3.select("body").append("svg")
+        svg.attr("viewBox", "0 0 1300 1000")
+        .attr("height", "100vh")
+        .attr("width","100vw") 
+        .append("g")
+    
+        let countiesMap = "https://cdn.jsdelivr.net/npm/us-atlas@3/counties-10m.json";
+        let stateMap = ""
+    
+    Promise.all([d3.json(countiesMap)]).then(main)
+
+    function main(data) {
+        
+        
+        console.log(data[0])
+
+        
+        const states =  topojson.feature(data[0], data[0].objects.states).features.filter(function(d) { return d.id == "25" | d.id == "33"| d.id == "09" | d.id == "23" | d.id == "44" | d.id == "50" } )
+        const counties = topojson.feature(data[0], data[0].objects.counties).features
+        .filter(function(d) { return d.properties.id=="25003"||
+d.id=="25005"||
+d.id=="25007"||
+d.id=="25009"||
+d.id=="25011"||
+d.id=="25013"||
+d.id=="25015"||
+d.id=="25017"||
+d.id=="25019"||
+d.id=="25021"||
+d.id=="25023"|| d.id=="08125"||d.id=="09001"||	d.id=="09003"||	d.id=="09005"||	d.id=="09007"||	d.id=="09009"||	d.id=="09011"||	d.id=="09013"||	d.id=="09015"||	d.id=="33001"||	
+d.id=="33003"||	d.id=="33005"||	d.id=="33007"||	d.id=="33009"||	d.id=="33011"||	d.id=="33013"||	d.id=="33015"||	d.id=="33017"||	d.id=="33019"||	d.id=="50001"||	d.id=="50003"||	d.id=="50005"||	d.id=="50007"||	d.id=="50009"||	d.id=="50011"||	d.id=="50013"||	d.id=="50015"||	d.id=="50017"||	d.id=="50019"||	d.id=="50021"||	d.id=="50023"||	d.id=="50025"||	d.id=="50027"||	d.id=="44001"||
+d.id=="44003"||	d.id=="44005"||	d.id=="44007"||	d.id=="44009"||	d.id=="23003"||	d.id=="23005"||	d.id=="23007"||	d.id=="23009"||	d.id=="23011"||	d.id=="23013"||	d.id=="23015"||	d.id=="23017"||	d.id=="23019"||	d.id=="23021"||
+	d.id=="23023"||	d.id=="23025"||	d.id=="23027"||	d.id=="23029"||	d.id=="23031" 
+
+
+ } )
+ console.log(counties)
+
+
+
+        console.log(states)
+        
+
+        const projection = d3.geoAlbersUsa().scale(8000).translate(([-1800,1600]))
+        const path = d3.geoPath().projection(projection)
+        const projection2 = d3.geoAlbersUsa().scale(10000).translate(([-2200,1800]))
+        const path2 = d3.geoPath().projection(projection2)
+
+        let mouseOver = function(d) {
+    d3.selectAll(".states ")
+      .transition()
+      .duration(100)
+      .attr("stroke-width", "1.5") 
+    d3.select(this)
+      .transition()
+      .duration(100)
+      .attr("stroke-width", "3.5")
+      
+      
+    }
+
+    let mouseLeave = function(d) {
+        d3.selectAll(".states ")
+      .transition()
+      .duration(100) 
+    d3.select(this)
+      .transition()
+      .duration(100)
+      .attr("stroke-width", "1.5")
+      
+      
+
+    }
+        
+       //console.log(topocounties)
+
+       svg.selectAll(".states")
+        .data(states)
+        .enter()
+        .append("path")
+        .attr("class","states")  
+        .attr("d",path) 
+        .attr("fill", "transparent")
+        .attr("stroke", "black")
+        .attr("stroke-width", "1.5")
+        .on("mouseover", mouseOver)
+        .on("mouseleave", mouseLeave)
+
+
+        svg.selectAll(".counties")
+        .data(counties)
+        .enter()
+        .append("path")
+        .attr("class","county")  
+        .attr("d",path) 
+        .attr("fill", "none")
+        .attr("stroke", "black")
+        .attr("stroke-width", "0.5")
+
+        
+
+}
+        
+    </script>
+    
+
+
+
+
+    
+    
