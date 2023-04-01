@@ -1,0 +1,306 @@
+<!-- Code from d3-graph-gallery.com -->
+<!DOCTYPE html>
+<meta charset="utf-8">
+
+<!-- Load d3.js -->
+<script src="https://d3js.org/d3.v4.js"></script>
+
+<!-- Create a div where the graph will take place -->
+
+<h1>Bubbles</h1>
+<h4>Select a year</h4>
+
+<select id='myselect'>
+   <option value='2000'>2000</option>
+   <option value='2001'>2001</option>
+   <option value='2002'>2002</option>
+   <option value='2003'>2003</option>
+   <option value='2004'>2004</option>
+   <option value='2005'>2005</option>
+   <option value='2006'>2006</option>
+   <option value='2007'>2007</option>
+   <option value='2008'>2008</option>
+   <option value='2009'>2009</option>
+   <option value='2010'>2010</option>
+   <option value='2011'>2011</option>
+   <option value='2012'>2012</option>
+   <option value='2013'>2013</option>
+   <option value='2014'>2014</option>
+   <option value='2015'>2015</option>
+   <option value='2016'>2016</option>
+   <option value='2017'>2017</option>
+   <option value='2018'>2018</option>
+   <option value='2019'>2019</option>   
+   <option value='2020'>2020</option>
+   <option value='2021'>2021</option>
+</select>
+
+<button onclick="changeData()">Update</button>
+
+<div id="my_dataviz"></div>
+
+
+<script>
+
+  //referencing https://d3-graph-gallery.com/graph/circularpacking_template.html
+  //and https://d3-graph-gallery.com/circularpacking.html
+
+// set the dimensions and margins of the graph
+var width = 1000
+var height = 500
+
+var svg = d3.select("#my_dataviz")
+  .append("svg")
+  .attr("width", 1000)
+  .attr("height", 500)
+
+var data2000 = [{"Year":2000,"State":"CT","name":"Culex pipiens","total":5},{"Year":2000,"State":"CT","name":"Culex restuans","total":4},{"Year":2000,"State":"CT","name":"Culex salinarius","total":2},{"Year":2000,"State":"CT","name":"Culiseta melanura","total":3},{"Year":2000,"State":"MA","name":"Aedes triseriatus","total":1},{"Year":2000,"State":"MA","name":"Culex restuans","total":1},{"Year":2000,"State":"MA","name":"Culex sp.","total":2}]
+
+var data2001 = [{"Year":2001,"State":"CT","name":"Aedes c. canadensis","total":1},{"Year":2001,"State":"CT","name":"Aedes cinereus","total":1},{"Year":2001,"State":"CT","name":"Aedes sollicitans","total":1},{"Year":2001,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2001,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2001,"State":"CT","name":"Culex pipiens","total":13},{"Year":2001,"State":"CT","name":"Culex restuans","total":1},{"Year":2001,"State":"CT","name":"Culex salinarius","total":6},{"Year":2001,"State":"CT","name":"Culiseta melanura","total":5},{"Year":2001,"State":"CT","name":"Uranotaenia sapphirina","total":1},{"Year":2001,"State":"MA","name":"Aedes j. japonicus","total":1},{"Year":2001,"State":"MA","name":"Culex pipiens","total":7},{"Year":2001,"State":"MA","name":"Culex restuans","total":5},{"Year":2001,"State":"MA","name":"Culex sp.","total":9},{"Year":2001,"State":"MA","name":"Culiseta melanura","total":3},{"Year":2001,"State":"NH","name":"Aedes triseriatus","total":1},{"Year":2001,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":2},{"Year":2001,"State":"RI","name":"Aedes c. canadensis","total":2},{"Year":2001,"State":"RI","name":"Aedes cantator","total":1},{"Year":2001,"State":"RI","name":"Aedes vexans","total":1},{"Year":2001,"State":"RI","name":"Anopheles punctipennis","total":1},{"Year":2001,"State":"RI","name":"Anopheles quadrimaculatus s.l.","total":2},{"Year":2001,"State":"RI","name":"Coquillettidia perturbans","total":2},{"Year":2001,"State":"RI","name":"Culex sp.","total":3},{"Year":2001,"State":"RI","name":"Culiseta sp.","total":1},{"Year":2001,"State":"RI","name":"Orthopodomyia signifera","total":1}]
+
+
+var data2002 = [{"Year":2002,"State":"CT","name":"Aedes trivittatus","total":1},{"Year":2002,"State":"CT","name":"Aedes vexans","total":4},{"Year":2002,"State":"CT","name":"Culex pipiens","total":54},{"Year":2002,"State":"CT","name":"Culex restuans","total":10},{"Year":2002,"State":"CT","name":"Culex salinarius","total":3},{"Year":2002,"State":"CT","name":"Uranotaenia sapphirina","total":1},{"Year":2002,"State":"MA","name":"Culex pipiens","total":17},{"Year":2002,"State":"MA","name":"Culex restuans","total":6},{"Year":2002,"State":"MA","name":"Culex sp.","total":41},{"Year":2002,"State":"MA","name":"Culiseta melanura","total":2},{"Year":2002,"State":"ME","name":"Aedes sollicitans","total":1},{"Year":2002,"State":"NH","name":"Aedes j. japonicus","total":2},{"Year":2002,"State":"NH","name":"Aedes triseriatus","total":1},{"Year":2002,"State":"NH","name":"Anopheles punctipennis","total":1},{"Year":2002,"State":"NH","name":"Anopheles walkeri","total":1},{"Year":2002,"State":"NH","name":"Coquillettidia perturbans","total":1},{"Year":2002,"State":"NH","name":"Culex pipiens","total":6},{"Year":2002,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":19},{"Year":2002,"State":"NH","name":"Culex restuans","total":2},{"Year":2002,"State":"RI","name":"Aedes vexans","total":2},{"Year":2002,"State":"RI","name":"Culex pipiens","total":2},{"Year":2002,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":11}]
+
+var data2003 = [{"Year":2003,"State":"CT","name":"Aedes c. canadensis","total":1},{"Year":2003,"State":"CT","name":"Aedes cinereus","total":3},{"Year":2003,"State":"CT","name":"Aedes sticticus","total":2},{"Year":2003,"State":"CT","name":"Aedes trivittatus","total":1},{"Year":2003,"State":"CT","name":"Aedes vexans","total":4},{"Year":2003,"State":"CT","name":"Anopheles walkeri","total":1},{"Year":2003,"State":"CT","name":"Culex pipiens","total":10},{"Year":2003,"State":"CT","name":"Culex restuans","total":10},{"Year":2003,"State":"CT","name":"Culex salinarius","total":13},{"Year":2003,"State":"CT","name":"Culiseta melanura","total":23},{"Year":2003,"State":"CT","name":"Psorophora ferox","total":2},{"Year":2003,"State":"CT","name":"Uranotaenia sapphirina","total":1},{"Year":2003,"State":"MA","name":"Coquillettidia perturbans","total":1},{"Year":2003,"State":"MA","name":"Culex pipiens","total":9},{"Year":2003,"State":"MA","name":"Culex restuans","total":3},{"Year":2003,"State":"MA","name":"Culex salinarius","total":1},{"Year":2003,"State":"MA","name":"Culex sp.","total":27},{"Year":2003,"State":"MA","name":"Culiseta melanura","total":6},{"Year":2003,"State":"MA","name":"Culiseta morsitans","total":1},{"Year":2003,"State":"NH","name":"Aedes c. canadensis","total":1},{"Year":2003,"State":"NH","name":"Culex pipiens","total":1},{"Year":2003,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":4},{"Year":2003,"State":"RI","name":"Culex pipiens","total":5},{"Year":2003,"State":"RI","name":"Culiseta impatiens","total":1},{"Year":2003,"State":"RI","name":"Culiseta morsitans","total":1}]
+
+var data2004 = [{"Year":2004,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2004,"State":"CT","name":"Anopheles quadrimaculatus s.l.","total":1},{"Year":2004,"State":"CT","name":"Culex pipiens","total":35},{"Year":2004,"State":"CT","name":"Culex restuans","total":5},{"Year":2004,"State":"CT","name":"Culex salinarius","total":5},{"Year":2004,"State":"MA","name":"Culex pipiens","total":3},{"Year":2004,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":6},{"Year":2004,"State":"MA","name":"Culex restuans","total":5},{"Year":2004,"State":"MA","name":"Culex sp.","total":1},{"Year":2004,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":7}]
+
+var data2005 = [{"Year":2005,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2005,"State":"CT","name":"Culex pipiens","total":29},{"Year":2005,"State":"CT","name":"Culex restuans","total":1},{"Year":2005,"State":"CT","name":"Culex salinarius","total":2},{"Year":2005,"State":"CT","name":"Culiseta melanura","total":1},{"Year":2005,"State":"MA","name":"Aedes j. japonicus","total":2},{"Year":2005,"State":"MA","name":"Aedes vexans","total":1},{"Year":2005,"State":"MA","name":"Culex pipiens","total":13},{"Year":2005,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":65},{"Year":2005,"State":"MA","name":"Culex restuans","total":2},{"Year":2005,"State":"MA","name":"Culex salinarius","total":5},{"Year":2005,"State":"MA","name":"Culex sp.","total":5},{"Year":2005,"State":"MA","name":"Culiseta melanura","total":6},{"Year":2005,"State":"NH","name":"Aedes triseriatus","total":1},{"Year":2005,"State":"RI","name":"Aedes vexans","total":1},{"Year":2005,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":2}]
+
+var data2006 = [{"Year":2006,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2006,"State":"CT","name":"Aedes vexans","total":2},{"Year":2006,"State":"CT","name":"Coquillettidia perturbans","total":1},{"Year":2006,"State":"CT","name":"Culex pipiens","total":179},{"Year":2006,"State":"CT","name":"Culex restuans","total":19},{"Year":2006,"State":"CT","name":"Culex salinarius","total":15},{"Year":2006,"State":"CT","name":"Culiseta melanura","total":2},{"Year":2006,"State":"MA","name":"Culex pipiens","total":2},{"Year":2006,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":24},{"Year":2006,"State":"MA","name":"Culex sp.","total":4},{"Year":2006,"State":"MA","name":"Culiseta melanura","total":13},{"Year":2006,"State":"RI","name":"Coquillettidia perturbans","total":1},{"Year":2006,"State":"RI","name":"Culex pipiens","total":9}]
+
+var data2007 = [{"Year":2007,"State":"CT","name":"Aedes c. canadensis","total":1},{"Year":2007,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2007,"State":"CT","name":"Culex pipiens","total":65},{"Year":2007,"State":"CT","name":"Culex restuans","total":1},{"Year":2007,"State":"CT","name":"Culex salinarius","total":1},{"Year":2007,"State":"MA","name":"Aedes j. japonicus","total":1},{"Year":2007,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":61},{"Year":2007,"State":"MA","name":"Culiseta melanura","total":3},{"Year":2007,"State":"RI","name":"Aedes j. japonicus","total":1},{"Year":2007,"State":"RI","name":"Culex pipiens","total":4}]
+
+var data2008 = [{"Year":2008,"State":"CT","name":"Aedes cinereus","total":1},{"Year":2008,"State":"CT","name":"Aedes j. japonicus","total":1},{"Year":2008,"State":"CT","name":"Aedes stimulans","total":1},{"Year":2008,"State":"CT","name":"Aedes trivittatus","total":1},{"Year":2008,"State":"CT","name":"Culex pipiens","total":124},{"Year":2008,"State":"CT","name":"Culex restuans","total":48},{"Year":2008,"State":"CT","name":"Culex salinarius","total":10},{"Year":2008,"State":"CT","name":"Culex territans","total":1},{"Year":2008,"State":"CT","name":"Culiseta melanura","total":4},{"Year":2008,"State":"MA","name":"Aedes j. japonicus","total":1},{"Year":2008,"State":"MA","name":"Culex pipiens","total":1},{"Year":2008,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":127},{"Year":2008,"State":"MA","name":"Culex salinarius","total":1},{"Year":2008,"State":"MA","name":"Culiseta melanura","total":6},{"Year":2008,"State":"NH","name":"Culiseta melanura","total":1},{"Year":2008,"State":"RI","name":"Aedes triseriatus","total":1},{"Year":2008,"State":"RI","name":"Coquillettidia perturbans","total":1},{"Year":2008,"State":"RI","name":"Culex pipiens","total":7},{"Year":2008,"State":"RI","name":"Culiseta morsitans","total":1},{"Year":2008,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":1}]
+
+var data2009 = [{"Year":2009,"State":"CT","name":"Aedes stimulans","total":1},{"Year":2009,"State":"CT","name":"Culex pipiens","total":25},{"Year":2009,"State":"CT","name":"Culex restuans","total":3},{"Year":2009,"State":"CT","name":"Culex salinarius","total":1},{"Year":2009,"State":"CT","name":"Culiseta melanura","total":5},{"Year":2009,"State":"MA","name":"Aedes c. canadensis","total":1},{"Year":2009,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":13},{"Year":2009,"State":"MA","name":"Culex sp.","total":4},{"Year":2009,"State":"MA","name":"Culiseta melanura","total":8},{"Year":2009,"State":"ME","name":"Culiseta melanura","total":1},{"Year":2009,"State":"RI","name":"Culex pipiens","total":3},{"Year":2009,"State":"VT","name":"Culex pipiens","total":1},{"Year":2009,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":1},{"Year":2009,"State":"VT","name":"Culiseta melanura","total":9},{"Year":2009,"State":"VT","name":"Culiseta morsitans","total":1}]
+ 
+var data2010 = [{"Year":2010,"State":"CT","name":"Aedes j. japonicus","total":4},{"Year":2010,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2010,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2010,"State":"CT","name":"Aedes vexans","total":2},{"Year":2010,"State":"CT","name":"Culex pipiens","total":170},{"Year":2010,"State":"CT","name":"Culex restuans","total":25},{"Year":2010,"State":"CT","name":"Culex salinarius","total":15},{"Year":2010,"State":"CT","name":"Culiseta melanura","total":1},{"Year":2010,"State":"CT","name":"Uranotaenia sapphirina","total":1},{"Year":2010,"State":"MA","name":"Coquillettidia perturbans","total":1},{"Year":2010,"State":"MA","name":"Culex pipiens","total":13},{"Year":2010,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":90},{"Year":2010,"State":"MA","name":"Culex sp.","total":11},{"Year":2010,"State":"MA","name":"Culiseta melanura","total":6},{"Year":2010,"State":"ME","name":"Aedes vexans","total":1},{"Year":2010,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":1},{"Year":2010,"State":"RI","name":"Culex pipiens","total":1},{"Year":2010,"State":"RI","name":"Culiseta melanura","total":1},{"Year":2010,"State":"VT","name":"Culiseta melanura","total":6},{"Year":2010,"State":"VT","name":"Culiseta morsitans","total":3}]
+ 
+var data2011 = [{"Year":2011,"State":"CT","name":"Coquillettidia perturbans","total":2},{"Year":2011,"State":"CT","name":"Culex pipiens","total":116},{"Year":2011,"State":"CT","name":"Culex restuans","total":27},{"Year":2011,"State":"CT","name":"Culex salinarius","total":12},{"Year":2011,"State":"CT","name":"Culiseta melanura","total":7},{"Year":2011,"State":"MA","name":"Aedes j. japonicus","total":1},{"Year":2011,"State":"MA","name":"Aedes vexans","total":1},{"Year":2011,"State":"MA","name":"Coquillettidia perturbans","total":1},{"Year":2011,"State":"MA","name":"Culex pipiens","total":1},{"Year":2011,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":223},{"Year":2011,"State":"MA","name":"Culex salinarius","total":1},{"Year":2011,"State":"MA","name":"Culex sp.","total":23},{"Year":2011,"State":"MA","name":"Culiseta melanura","total":24},{"Year":2011,"State":"NH","name":"Aedes c. canadensis","total":1},{"Year":2011,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":4},{"Year":2011,"State":"NH","name":"Culex restuans","total":1},{"Year":2011,"State":"NH","name":"Culex salinarius","total":1},{"Year":2011,"State":"NH","name":"Culiseta melanura","total":2},{"Year":2011,"State":"RI","name":"Culex sp.","total":1},{"Year":2011,"State":"RI","name":"Culiseta sp.","total":1},{"Year":2011,"State":"VT","name":"Culiseta melanura","total":2},{"Year":2011,"State":"VT","name":"Culiseta morsitans","total":1}]
+ 
+var data2012 = [{"Year":2012,"State":"CT","name":"Aedes cinereus","total":1},{"Year":2012,"State":"CT","name":"Aedes vexans","total":1},{"Year":2012,"State":"CT","name":"Coquillettidia perturbans","total":3},{"Year":2012,"State":"CT","name":"Culex pipiens","total":195},{"Year":2012,"State":"CT","name":"Culex restuans","total":18},{"Year":2012,"State":"CT","name":"Culex salinarius","total":6},{"Year":2012,"State":"CT","name":"Culiseta melanura","total":11},{"Year":2012,"State":"MA","name":"Aedes vexans","total":2},{"Year":2012,"State":"MA","name":"Coquillettidia perturbans","total":7},{"Year":2012,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":203},{"Year":2012,"State":"MA","name":"Culex salinarius","total":5},{"Year":2012,"State":"MA","name":"Culex sp.","total":60},{"Year":2012,"State":"MA","name":"Culiseta melanura","total":30},{"Year":2012,"State":"ME","name":"Culex pipiens-restuans (Mixed)","total":2},{"Year":2012,"State":"ME","name":"Culiseta melanura","total":5},{"Year":2012,"State":"NH","name":"Aedes j. japonicus","total":1},{"Year":2012,"State":"NH","name":"Aedes triseriatus","total":1},{"Year":2012,"State":"NH","name":"Aedes vexans","total":1},{"Year":2012,"State":"NH","name":"Coquillettidia perturbans","total":3},{"Year":2012,"State":"NH","name":"Culex pipiens","total":6},{"Year":2012,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":24},{"Year":2012,"State":"NH","name":"Culex restuans","total":2},{"Year":2012,"State":"NH","name":"Culex salinarius","total":2},{"Year":2012,"State":"NH","name":"Culiseta melanura","total":1},{"Year":2012,"State":"RI","name":"Aedes cantator","total":1},{"Year":2012,"State":"RI","name":"Culex sp.","total":4},{"Year":2012,"State":"VT","name":"Aedes c. canadensis","total":1}]
+ 
+var data2013 = [{"Year":2013,"State":"CT","name":"Aedes vexans","total":1},{"Year":2013,"State":"CT","name":"Culex pipiens","total":46},{"Year":2013,"State":"CT","name":"Culex restuans","total":33},{"Year":2013,"State":"CT","name":"Culex salinarius","total":5},{"Year":2013,"State":"CT","name":"Culiseta melanura","total":4},{"Year":2013,"State":"CT","name":"Psorophora ferox","total":1},{"Year":2013,"State":"MA","name":"Aedes c. canadensis","total":2},{"Year":2013,"State":"MA","name":"Aedes sollicitans","total":1},{"Year":2013,"State":"MA","name":"Aedes taeniorhynchus","total":1},{"Year":2013,"State":"MA","name":"Aedes vexans","total":2},{"Year":2013,"State":"MA","name":"Coquillettidia perturbans","total":15},{"Year":2013,"State":"MA","name":"Culex pipiens","total":16},{"Year":2013,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":207},{"Year":2013,"State":"MA","name":"Culex restuans","total":1},{"Year":2013,"State":"MA","name":"Culex salinarius","total":3},{"Year":2013,"State":"MA","name":"Culex sp.","total":13},{"Year":2013,"State":"MA","name":"Culiseta melanura","total":73},{"Year":2013,"State":"MA","name":"Culiseta morsitans","total":1},{"Year":2013,"State":"ME","name":"Culiseta melanura","total":2},{"Year":2013,"State":"NH","name":"Aedes c. canadensis","total":1},{"Year":2013,"State":"NH","name":"Culex pipiens","total":6},{"Year":2013,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":1},{"Year":2013,"State":"NH","name":"Culex restuans","total":1},{"Year":2013,"State":"NH","name":"Culex salinarius","total":1},{"Year":2013,"State":"NH","name":"Culiseta melanura","total":4},{"Year":2013,"State":"RI","name":"Aedes taeniorhynchus","total":1},{"Year":2013,"State":"RI","name":"Culex sp.","total":5},{"Year":2013,"State":"RI","name":"Culiseta sp.","total":2},{"Year":2013,"State":"VT","name":"Aedes vexans","total":1},{"Year":2013,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":11},{"Year":2013,"State":"VT","name":"Culiseta melanura","total":15},{"Year":2013,"State":"VT","name":"Culiseta morsitans","total":1}]
+ 
+var data2014 = [{"Year":2014,"State":"CT","name":"Aedes trivittatus","total":1},{"Year":2014,"State":"CT","name":"Aedes vexans","total":1},{"Year":2014,"State":"CT","name":"Coquillettidia perturbans","total":1},{"Year":2014,"State":"CT","name":"Culex pipiens","total":52},{"Year":2014,"State":"CT","name":"Culex restuans","total":10},{"Year":2014,"State":"CT","name":"Culex salinarius","total":2},{"Year":2014,"State":"CT","name":"Culiseta melanura","total":1},{"Year":2014,"State":"MA","name":"Aedes triseriatus","total":1},{"Year":2014,"State":"MA","name":"Coquillettidia perturbans","total":1},{"Year":2014,"State":"MA","name":"Culex pipiens","total":1},{"Year":2014,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":48},{"Year":2014,"State":"MA","name":"Culex salinarius","total":1},{"Year":2014,"State":"MA","name":"Culex sp.","total":2},{"Year":2014,"State":"MA","name":"Culiseta melanura","total":2},{"Year":2014,"State":"NH","name":"Culiseta melanura","total":1},{"Year":2014,"State":"RI","name":"Culex sp.","total":2},{"Year":2014,"State":"VT","name":"Aedes j. japonicus","total":1},{"Year":2014,"State":"VT","name":"Coquillettidia perturbans","total":1},{"Year":2014,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":5},{"Year":2014,"State":"VT","name":"Culex salinarius","total":1}]
+ 
+var data2015 = [{"Year":2015,"State":"CT","name":"Aedes j. japonicus","total":1},{"Year":2015,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2015,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2015,"State":"CT","name":"Aedes vexans","total":2},{"Year":2015,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2015,"State":"CT","name":"Culex pipiens","total":108},{"Year":2015,"State":"CT","name":"Culex restuans","total":16},{"Year":2015,"State":"CT","name":"Culex salinarius","total":25},{"Year":2015,"State":"CT","name":"Culiseta melanura","total":2},{"Year":2015,"State":"MA","name":"Coquillettidia perturbans","total":1},{"Year":2015,"State":"MA","name":"Culex pipiens","total":5},{"Year":2015,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":150},{"Year":2015,"State":"MA","name":"Culex salinarius","total":3},{"Year":2015,"State":"MA","name":"Culiseta melanura","total":5},{"Year":2015,"State":"ME","name":"Culiseta melanura","total":1},{"Year":2015,"State":"NH","name":"Aedes vexans","total":1},{"Year":2015,"State":"NH","name":"Culex restuans","total":1},{"Year":2015,"State":"NH","name":"Culiseta morsitans","total":1},{"Year":2015,"State":"RI","name":"Culex sp.","total":4},{"Year":2015,"State":"VT","name":"Aedes c. canadensis","total":1},{"Year":2015,"State":"VT","name":"Aedes j. japonicus","total":5},{"Year":2015,"State":"VT","name":"Aedes trivittatus","total":3},{"Year":2015,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":75},{"Year":2015,"State":"VT","name":"Culiseta melanura","total":5},{"Year":2015,"State":"VT","name":"Culiseta morsitans","total":1}]
+ 
+var data2016 = [{"Year":2016,"State":"CT","name":"Aedes albopictus","total":1},{"Year":2016,"State":"CT","name":"Aedes j. japonicus","total":1},{"Year":2016,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2016,"State":"CT","name":"Anopheles quadrimaculatus s.l.","total":1},{"Year":2016,"State":"CT","name":"Anopheles walkeri","total":1},{"Year":2016,"State":"CT","name":"Culex pipiens","total":108},{"Year":2016,"State":"CT","name":"Culex restuans","total":7},{"Year":2016,"State":"CT","name":"Culex salinarius","total":1},{"Year":2016,"State":"CT","name":"Culiseta morsitans","total":1},{"Year":2016,"State":"NH","name":"Culex pipiens","total":1},{"Year":2016,"State":"RI","name":"Culex sp.","total":1},{"Year":2016,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":19}]
+ 
+var data2017 = [{"Year":2017,"State":"CT","name":"Aedes c. canadensis","total":1},{"Year":2017,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2017,"State":"CT","name":"Anopheles crucians complex","total":1},{"Year":2017,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2017,"State":"CT","name":"Culex pipiens","total":75},{"Year":2017,"State":"CT","name":"Culex restuans","total":22},{"Year":2017,"State":"CT","name":"Culex salinarius","total":17},{"Year":2017,"State":"CT","name":"Culex territans","total":1},{"Year":2017,"State":"CT","name":"Culiseta melanura","total":5},{"Year":2017,"State":"CT","name":"Psorophora ferox","total":1},{"Year":2017,"State":"MA","name":"Aedes c. canadensis","total":3},{"Year":2017,"State":"MA","name":"Aedes j. japonicus","total":1},{"Year":2017,"State":"MA","name":"Coquillettidia perturbans","total":4},{"Year":2017,"State":"MA","name":"Culex pipiens","total":14},{"Year":2017,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":236},{"Year":2017,"State":"MA","name":"Culex salinarius","total":5},{"Year":2017,"State":"MA","name":"Culex sp.","total":22},{"Year":2017,"State":"MA","name":"Culiseta melanura","total":5},{"Year":2017,"State":"NH","name":"Culex pipiens","total":1},{"Year":2017,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":2},{"Year":2017,"State":"NH","name":"Culex restuans","total":1},{"Year":2017,"State":"NH","name":"Culex salinarius","total":1},{"Year":2017,"State":"NH","name":"Culiseta melanura","total":4},{"Year":2017,"State":"RI","name":"Culex sp.","total":3},{"Year":2017,"State":"VT","name":"Aedes cinereus","total":2},{"Year":2017,"State":"VT","name":"Aedes vexans","total":1},{"Year":2017,"State":"VT","name":"Anopheles punctipennis","total":2},{"Year":2017,"State":"VT","name":"Anopheles quadrimaculatus s.l.","total":1},{"Year":2017,"State":"VT","name":"Coquillettidia perturbans","total":8},{"Year":2017,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":56},{"Year":2017,"State":"VT","name":"Culex territans","total":1},{"Year":2017,"State":"VT","name":"Culiseta melanura","total":7},{"Year":2017,"State":"VT","name":"Culiseta morsitans","total":4},{"Year":2017,"State":"VT","name":"Other Species \/ Unknown","total":7}]
+ 
+var data2018 = [{"Year":2018,"State":"CT","name":"Aedes albopictus","total":1},{"Year":2018,"State":"CT","name":"Aedes c. canadensis","total":5},{"Year":2018,"State":"CT","name":"Aedes cinereus","total":6},{"Year":2018,"State":"CT","name":"Aedes j. japonicus","total":3},{"Year":2018,"State":"CT","name":"Aedes taeniorhynchus","total":1},{"Year":2018,"State":"CT","name":"Aedes triseriatus","total":1},{"Year":2018,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2018,"State":"CT","name":"Coquillettidia perturbans","total":4},{"Year":2018,"State":"CT","name":"Culex pipiens","total":242},{"Year":2018,"State":"CT","name":"Culex restuans","total":70},{"Year":2018,"State":"CT","name":"Culex salinarius","total":24},{"Year":2018,"State":"CT","name":"Culiseta melanura","total":34},{"Year":2018,"State":"CT","name":"Psorophora ferox","total":1},{"Year":2018,"State":"MA","name":"Aedes c. canadensis","total":3},{"Year":2018,"State":"MA","name":"Aedes j. japonicus","total":5},{"Year":2018,"State":"MA","name":"Aedes provocans","total":1},{"Year":2018,"State":"MA","name":"Aedes vexans","total":1},{"Year":2018,"State":"MA","name":"Anopheles quadrimaculatus s.l.","total":1},{"Year":2018,"State":"MA","name":"Coquillettidia perturbans","total":6},{"Year":2018,"State":"MA","name":"Culex pipiens","total":7},{"Year":2018,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":350},{"Year":2018,"State":"MA","name":"Culex salinarius","total":10},{"Year":2018,"State":"MA","name":"Culex sp.","total":154},{"Year":2018,"State":"MA","name":"Culiseta melanura","total":41},{"Year":2018,"State":"ME","name":"Culex pipiens","total":1},{"Year":2018,"State":"ME","name":"Culex pipiens-restuans (Mixed)","total":2},{"Year":2018,"State":"ME","name":"Culiseta melanura","total":1},{"Year":2018,"State":"NH","name":"Aedes c. canadensis","total":1},{"Year":2018,"State":"NH","name":"Aedes cinereus","total":2},{"Year":2018,"State":"NH","name":"Coquillettidia perturbans","total":3},{"Year":2018,"State":"NH","name":"Culex pipiens","total":5},{"Year":2018,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":5},{"Year":2018,"State":"NH","name":"Culex restuans","total":1},{"Year":2018,"State":"NH","name":"Culex salinarius","total":4},{"Year":2018,"State":"NH","name":"Culiseta melanura","total":9},{"Year":2018,"State":"NH","name":"Culiseta morsitans","total":1},{"Year":2018,"State":"NH","name":"Psorophora ferox","total":1},{"Year":2018,"State":"RI","name":"Culex sp.","total":8},{"Year":2018,"State":"RI","name":"Culiseta morsitans","total":2},{"Year":2018,"State":"VT","name":"Aedes c. canadensis","total":2},{"Year":2018,"State":"VT","name":"Aedes cinereus","total":1},{"Year":2018,"State":"VT","name":"Aedes j. japonicus","total":14},{"Year":2018,"State":"VT","name":"Aedes trivittatus","total":2},{"Year":2018,"State":"VT","name":"Aedes vexans","total":3},{"Year":2018,"State":"VT","name":"Anopheles punctipennis","total":1},{"Year":2018,"State":"VT","name":"Anopheles quadrimaculatus s.s.","total":2},{"Year":2018,"State":"VT","name":"Coquillettidia perturbans","total":6},{"Year":2018,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":116},{"Year":2018,"State":"VT","name":"Culiseta melanura","total":7},{"Year":2018,"State":"VT","name":"Culiseta morsitans","total":3}]
+
+
+var data2019 = [{"Year":2019,"State":"CT","name":"Aedes c. canadensis","total":2},{"Year":2019,"State":"CT","name":"Aedes vexans","total":1},{"Year":2019,"State":"CT","name":"Anopheles punctipennis","total":1},{"Year":2019,"State":"CT","name":"Coquillettidia perturbans","total":3},{"Year":2019,"State":"CT","name":"Culex pipiens","total":49},{"Year":2019,"State":"CT","name":"Culex restuans","total":10},{"Year":2019,"State":"CT","name":"Culex salinarius","total":5},{"Year":2019,"State":"CT","name":"Culiseta melanura","total":10},{"Year":2019,"State":"CT","name":"Culiseta morsitans","total":1},{"Year":2019,"State":"MA","name":"Aedes c. canadensis","total":1},{"Year":2019,"State":"MA","name":"Coquillettidia perturbans","total":7},{"Year":2019,"State":"MA","name":"Culex pipiens","total":3},{"Year":2019,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":37},{"Year":2019,"State":"MA","name":"Culex salinarius","total":7},{"Year":2019,"State":"MA","name":"Culex sp.","total":9},{"Year":2019,"State":"MA","name":"Culiseta melanura","total":23},{"Year":2019,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":1},{"Year":2019,"State":"RI","name":"Culex sp.","total":2},{"Year":2019,"State":"RI","name":"Culiseta melanura","total":2},{"Year":2019,"State":"VT","name":"Culex pipiens-restuans (Mixed)","total":5}]
+ 
+var data2020 = [{"Year":2020,"State":"CT","name":"Aedes j. japonicus","total":1},{"Year":2020,"State":"CT","name":"Culex pipiens","total":125},{"Year":2020,"State":"CT","name":"Culex restuans","total":16},{"Year":2020,"State":"CT","name":"Culex salinarius","total":1},{"Year":2020,"State":"MA","name":"Coquillettidia perturbans","total":4},{"Year":2020,"State":"MA","name":"Culex pipiens","total":2},{"Year":2020,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":84},{"Year":2020,"State":"MA","name":"Culex salinarius","total":4},{"Year":2020,"State":"MA","name":"Culiseta melanura","total":3},{"Year":2020,"State":"NH","name":"Culex pipiens","total":1},{"Year":2020,"State":"NH","name":"Culex restuans","total":1}]
+ 
+var data2021 = [{"Year":2021,"State":"CT","name":"Aedes cinereus","total":6},{"Year":2021,"State":"CT","name":"Aedes j. japonicus","total":1},{"Year":2021,"State":"CT","name":"Aedes trivittatus","total":2},{"Year":2021,"State":"CT","name":"Aedes vexans","total":1},{"Year":2021,"State":"CT","name":"Culex pipiens","total":118},{"Year":2021,"State":"CT","name":"Culex restuans","total":55},{"Year":2021,"State":"CT","name":"Culex salinarius","total":8},{"Year":2021,"State":"CT","name":"Culiseta melanura","total":8},{"Year":2021,"State":"CT","name":"Psorophora ferox","total":8},{"Year":2021,"State":"CT","name":"Uranotaenia sapphirina","total":1},{"Year":2021,"State":"MA","name":"Aedes c. canadensis","total":1},{"Year":2021,"State":"MA","name":"Aedes vexans","total":5},{"Year":2021,"State":"MA","name":"Culex pipiens","total":5},{"Year":2021,"State":"MA","name":"Culex pipiens-restuans (Mixed)","total":103},{"Year":2021,"State":"MA","name":"Culex restuans","total":3},{"Year":2021,"State":"MA","name":"Culex salinarius","total":14},{"Year":2021,"State":"MA","name":"Culex sp.","total":1},{"Year":2021,"State":"MA","name":"Culiseta melanura","total":6},{"Year":2021,"State":"MA","name":"Psorophora ferox","total":1},{"Year":2021,"State":"NH","name":"Culex pipiens","total":2},{"Year":2021,"State":"NH","name":"Culex pipiens-restuans (Mixed)","total":2},{"Year":2021,"State":"NH","name":"Culiseta melanura","total":2},{"Year":2021,"State":"RI","name":"Coquillettidia perturbans","total":2},{"Year":2021,"State":"RI","name":"Culex sp.","total":3},{"Year":2021,"State":"RI","name":"Culiseta melanura","total":1}]
+
+
+  // create a list of keys
+     
+var keys2000=["Connecticut", "Massachusetts"]
+var keys2001=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island"]
+var keys2002=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2003=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island"]
+var keys2004=["Connecticut", "Massachusetts", "Vermont"]
+var keys2005=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2006=["Connecticut", "Massachusetts", "Rhode Island"]
+var keys2007=["Connecticut", "Massachusetts", "Rhode Island"]
+var keys2008=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2009=["Connecticut", "Massachusetts", "Maine", "Rhode Island", "Vermont"]
+var keys2010=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2011=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2012=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2013=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2014=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2015=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2016=["Connecticut", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2017=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2018=["Connecticut", "Massachusetts", "Maine", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2019=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island", "Vermont"]
+var keys2020=["Connecticut", "Massachusetts", "New Hampshire",]
+var keys2021=["Connecticut", "Massachusetts", "New Hampshire", "Rhode Island"]
+
+
+function changeData(){
+
+  //clear old data THIS REMOVES ALL SVGs
+  d3.selectAll("svg > *").remove();
+
+  //THERE WE GO
+  // but it moves it down...........
+
+  /*
+  d3.select("#my_dataviz").select("svg").remove();
+
+  var svg = d3.select("#my_dataviz")
+  .append("svg")
+  .attr("width", 1000)
+  .attr("height", 500)
+*/
+
+  var dataName = "data"
+  var dataNum = document.getElementById("myselect").value
+  data = eval(dataName.concat(dataNum))
+
+  var keys = eval("keys".concat(dataNum))
+
+  max=-1
+  min=2000
+  for (var i = data.length - 1; i >= 0; i--) {
+    num = data[i].total
+    if(num>max)
+      max=num
+    if(num<min)
+      min=num
+    //data[i].Year=i //I change the year to a unique number to use as ID. stupid solution to an issue I'm having where circles don't have IDs
+  }
+
+  console.log(data)
+  console.log(min)
+  console.log(max)
+  //(val, max, min) => (val - min) / (max - min); 
+
+  // A scale that gives a X target position for each group
+  var x = d3.scaleOrdinal()
+    .domain([1, 2, 3, 4, 5, 6])
+    .range([350, 400, 450, 500, 550, 600])
+
+  // A color scale
+  var color = d3.scaleOrdinal()
+    .domain([1, 6])
+    .range([ "#D42A34", "#62CA50", "#F78C37", "#0677BA", "#FFD827", "#6A32A5"])
+
+
+    var Tooltip = d3.select("#my_dataviz")
+      .append("div")
+      .style("opacity", 0)
+      .attr("class", "tooltip")
+      .style("background-color", "white")
+      .style("border", "solid")
+      .style("border-width", "2px")
+      .style("border-radius", "5px")
+      .style("padding", "5px")
+
+    // Three function that change the tooltip when user hover / move / leave a cell
+    var mouseover = function(d) {
+      Tooltip
+        .style("opacity", 1)
+    }
+    var mousemove = function(d) {
+      Tooltip
+        .html('<u>' + d.name + '</u>' + "<br>" + "State: "+d.State+", Total this year: " + d.total)
+        .style("top", (d3.mouse(this)[1]) + "px")
+    }
+    var mouseleave = function(d) {
+      Tooltip
+        .style("opacity", 0)
+    }
+
+  // Initialize the circle: all located at the center of the svg area
+  var node = svg.append("g")
+    .selectAll("circle") //    .attr("id", )
+    .data(data)
+    .enter()
+    .append("circle")
+      .attr("r", function(d){ return 40*standardize(d.total)+10})
+      .attr("cx", width / 2)
+      .attr("cy", height / 2)
+      .style("fill", function(d){ return color(d.State)})
+      .style("fill-opacity", 0.8)
+      .attr("stroke", "black")
+      .style("stroke-width", 4)
+      .on("mouseover", mouseover) // What to do when hovered
+      .on("mousemove", mousemove)
+      .on("mouseleave", mouseleave)
+      .call(d3.drag() // call specific function when circle is dragged
+           .on("start", dragstarted)
+           .on("drag", dragged)
+           .on("end", dragended));
+
+
+
+  // Features of the forces applied to the nodes:
+  var simulation = d3.forceSimulation()
+      .force("x", d3.forceX().strength(.2).x( function(d){ return x(d.State) } ))
+      .force("y", d3.forceY().strength(.2).y( height/2 ))
+      .force("center", d3.forceCenter().x(width / 2).y(height / 2)) // Attraction to the center of the svg area
+      .force("charge", d3.forceManyBody().strength(1)) // Nodes are attracted one each other of value is > 0
+      .force("collide", d3.forceCollide().strength(0.2).radius(function(d){ return 40*standardize(d.total)+14}).iterations(1)) // Force that avoids circle overlapping
+
+  // Apply these forces to the nodes and update their positions.
+  // Once the force algorithm is happy with positions ('alpha' value is low enough), simulations will stop.
+  simulation
+      .nodes(data)
+      .on("tick", function(d){
+        node
+            .attr("cx", function(d){ return d.x; })
+            .attr("cy", function(d){ return d.y; })
+      });
+
+
+
+
+  //https://d3-graph-gallery.com/graph/custom_legend.html
+  // Add one dot in the legend for each name.
+  svg.selectAll("mydots")
+    .data(keys)
+    .enter()
+    .append("circle")
+      .attr("cx", 100)
+      .attr("cy", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+      .attr("r", 7)
+      .style("fill", function(d){ return color(d)})
+
+  // Add one dot in the legend for each name.
+  svg.selectAll("mylabels")
+    .data(keys)
+    .enter()
+    .append("text")
+      .attr("x", 120)
+      .attr("y", function(d,i){ return 100 + i*25}) // 100 is where the first dot appears. 25 is the distance between dots
+      .style("fill", function(d){ return color(d)})
+      .text(function(d){ return d})
+      .attr("text-anchor", "left")
+      .style("alignment-baseline", "middle")
+
+
+
+    node.append("text")
+      .attr("class","label")
+      .attr("text-anchor","middle")
+      .text(d=>d.name)
+      .style("font-size", "10px")
+
+
+  function standardize(val){
+    return (val-min) / (max-min)
+  }
+
+          
+  // What happens when a circle is dragged?
+  function dragstarted(d) {
+    if (!d3.event.active) simulation.alphaTarget(.03).restart();
+    d.fx = d.x;
+    d.fy = d.y;
+  }
+  function dragged(d) {
+    d.fx = d3.event.x;
+    d.fy = d3.event.y;
+  }
+  function dragended(d) {
+    if (!d3.event.active) simulation.alphaTarget(.03);
+    d.fx = null;
+    d.fy = null;
+  }
+
+
+}
+
+
+</script>

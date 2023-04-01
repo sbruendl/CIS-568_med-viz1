@@ -1,0 +1,1044 @@
+﻿Year,COUNT,State,County,Arbovirus,name
+2000,3,CT,09001,WNV,Culex pipiens
+2000,4,CT,09001,WNV,Culex restuans
+2000,3,CT,09001,WNV,Culiseta melanura
+2000,2,CT,09009,WNV,Culex pipiens
+2000,2,CT,09009,WNV,Culex salinarius
+2000,1,MA,25021,WNV,Aedes triseriatus
+2000,1,MA,25021,WNV,Culex restuans
+2000,1,MA,25021,WNV,Culex sp.
+2000,1,MA,25025,WNV,Culex sp.
+2001,1,CT,09001,WNV,Aedes c. canadensis
+2001,1,CT,09001,WNV,Aedes sollicitans
+2001,11,CT,09001,WNV,Culex pipiens
+2001,2,CT,09001,WNV,Culex salinarius
+2001,1,CT,09001,WNV,Culiseta melanura
+2001,1,CT,09005,WNV,Aedes cinereus
+2001,1,CT,09005,WNV,Culiseta melanura
+2001,1,CT,09009,WNV,Aedes taeniorhynchus
+2001,2,CT,09009,WNV,Culex pipiens
+2001,1,CT,09009,WNV,Culex restuans
+2001,4,CT,09009,WNV,Culex salinarius
+2001,3,CT,09009,WNV,Culiseta melanura
+2001,1,CT,09011,WNV,Anopheles punctipennis
+2001,1,CT,09011,WNV,Uranotaenia sapphirina
+2001,1,MA,25005,WNV,Culex restuans
+2001,3,MA,25005,WNV,Culiseta melanura
+2001,3,MA,25009,WNV,Culex pipiens
+2001,1,MA,25009,WNV,Culex restuans
+2001,3,MA,25017,WNV,Culex pipiens
+2001,2,MA,25017,WNV,Culex restuans
+2001,7,MA,25017,WNV,Culex sp.
+2001,1,MA,25021,WNV,Aedes j. japonicus
+2001,1,MA,25021,WNV,Culex pipiens
+2001,2,MA,25021,WNV,Culex sp.
+2001,1,MA,25023,WNV,Culex restuans
+2001,2,NH,33015,WNV,Culex pipiens-restuans (Mixed)
+2001,1,NH,33017,WNV,Aedes triseriatus
+2001,2,RI,44005,WNV,Aedes c. canadensis
+2001,1,RI,44005,WNV,Aedes vexans
+2001,2,RI,44005,WNV,Anopheles quadrimaculatus s.l.
+2001,1,RI,44005,WNV,Culex sp.
+2001,1,RI,44007,WNV,Aedes cantator
+2001,1,RI,44007,WNV,Anopheles punctipennis
+2001,2,RI,44007,WNV,Coquillettidia perturbans
+2001,2,RI,44007,WNV,Culex sp.
+2001,1,RI,44007,WNV,Orthopodomyia signifera
+2001,1,RI,44009,WNV,Culiseta sp.
+2002,3,CT,09001,WNV,Aedes vexans
+2002,40,CT,09001,WNV,Culex pipiens
+2002,6,CT,09001,WNV,Culex restuans
+2002,3,CT,09001,WNV,Culex salinarius
+2002,1,CT,09003,WNV,Aedes trivittatus
+2002,1,CT,09003,WNV,Aedes vexans
+2002,9,CT,09003,WNV,Culex pipiens
+2002,4,CT,09003,WNV,Culex restuans
+2002,1,CT,09003,WNV,Uranotaenia sapphirina
+2002,4,CT,09009,WNV,Culex pipiens
+2002,1,CT,09015,WNV,Culex pipiens
+2002,1,MA,25005,WNV,Culex restuans
+2002,1,MA,25005,WNV,Culex sp.
+2002,7,MA,25009,WNV,Culex pipiens
+2002,1,MA,25009,WNV,Culex sp.
+2002,2,MA,25013,WNV,Culex pipiens
+2002,1,MA,25013,WNV,Culex restuans
+2002,6,MA,25013,WNV,Culex sp.
+2002,2,MA,25017,WNV,Culex pipiens
+2002,6,MA,25017,WNV,Culex sp.
+2002,2,MA,25021,WNV,Culex pipiens
+2002,16,MA,25021,WNV,Culex sp.
+2002,4,MA,25025,WNV,Culex pipiens
+2002,3,MA,25025,WNV,Culex restuans
+2002,11,MA,25025,WNV,Culex sp.
+2002,2,MA,25025,WNV,Culiseta melanura
+2002,1,MA,25027,WNV,Culex restuans
+2002,1,ME,23031,WNV,Aedes sollicitans
+2002,1,NH,33005,WNV,Aedes j. japonicus
+2002,1,NH,33009,WNV,Aedes triseriatus
+2002,1,NH,33011,WNV,Aedes j. japonicus
+2002,6,NH,33011,WNV,Culex pipiens
+2002,18,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2002,2,NH,33011,WNV,Culex restuans
+2002,1,NH,33013,WNV,Anopheles punctipennis
+2002,1,NH,33013,WNV,Anopheles walkeri
+2002,1,NH,33013,WNV,Coquillettidia perturbans
+2002,1,NH,33013,WNV,Culex pipiens-restuans (Mixed)
+2002,1,RI,44001,WNV,Aedes vexans
+2002,1,RI,44007,WNV,Aedes vexans
+2002,2,RI,44007,WNV,Culex pipiens
+2002,1,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2002,8,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2002,1,VT,50013,WNV,Culex pipiens-restuans (Mixed)
+2002,1,VT,50019,WNV,Culex pipiens-restuans (Mixed)
+2003,1,CT,09001,WNV,Aedes c. canadensis
+2003,2,CT,09001,WNV,Aedes sticticus
+2003,1,CT,09001,WNV,Aedes trivittatus
+2003,1,CT,09001,WNV,Aedes vexans
+2003,3,CT,09001,WNV,Culex pipiens
+2003,5,CT,09001,WNV,Culex restuans
+2003,2,CT,09001,WNV,Culex salinarius
+2003,4,CT,09001,WNV,Culiseta melanura
+2003,1,CT,09003,WNV,Culex pipiens
+2003,3,CT,09003,WNV,Culex restuans
+2003,1,CT,09003,WNV,Culiseta melanura
+2003,1,CT,09005,WNV,Uranotaenia sapphirina
+2003,1,CT,09007,WNV,Aedes cinereus
+2003,2,CT,09007,WNV,Culex pipiens
+2003,5,CT,09007,WNV,Culiseta melanura
+2003,1,CT,09009,WNV,Aedes cinereus
+2003,3,CT,09009,WNV,Aedes vexans
+2003,1,CT,09009,WNV,Anopheles walkeri
+2003,4,CT,09009,WNV,Culex pipiens
+2003,2,CT,09009,WNV,Culex restuans
+2003,10,CT,09009,WNV,Culex salinarius
+2003,3,CT,09009,WNV,Culiseta melanura
+2003,1,CT,09009,WNV,Psorophora ferox
+2003,1,CT,09011,WNV,Aedes cinereus
+2003,10,CT,09011,WNV,Culiseta melanura
+2003,1,CT,09011,WNV,Psorophora ferox
+2003,1,CT,09015,WNV,Culex salinarius
+2003,1,MA,25001,WNV,Culex pipiens
+2003,1,MA,25005,WNV,Coquillettidia perturbans
+2003,4,MA,25005,WNV,Culex pipiens
+2003,6,MA,25005,WNV,Culex sp.
+2003,2,MA,25005,WNV,Culiseta melanura
+2003,2,MA,25009,WNV,Culex pipiens
+2003,2,MA,25013,WNV,Culex pipiens
+2003,1,MA,25013,WNV,Culex sp.
+2003,2,MA,25017,WNV,Culex restuans
+2003,6,MA,25017,WNV,Culex sp.
+2003,1,MA,25021,WNV,Culex salinarius
+2003,11,MA,25021,WNV,Culex sp.
+2003,2,MA,25021,WNV,Culiseta melanura
+2003,2,MA,25023,WNV,Culex sp.
+2003,1,MA,25025,WNV,Culex sp.
+2003,1,MA,25025,WNV,Culiseta melanura
+2003,1,MA,25027,WNV,Culex restuans
+2003,1,MA,25027,WNV,Culiseta melanura
+2003,1,MA,25027,WNV,Culiseta morsitans
+2003,1,NH,33011,WNV,Culex pipiens
+2003,3,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2003,1,NH,33013,WNV,Aedes c. canadensis
+2003,1,NH,33015,WNV,Culex pipiens-restuans (Mixed)
+2003,1,RI,44005,WNV,Culex pipiens
+2003,1,RI,44005,WNV,Culiseta impatiens
+2003,1,RI,44007,WNV,Culex pipiens
+2003,3,RI,44009,WNV,Culex pipiens
+2003,1,RI,44009,WNV,Culiseta morsitans
+2004,1,CT,09001,WNV,Aedes triseriatus
+2004,8,CT,09001,WNV,Culex pipiens
+2004,2,CT,09001,WNV,Culex restuans
+2004,1,CT,09001,WNV,Culex salinarius
+2004,1,CT,09009,WNV,Anopheles quadrimaculatus s.l.
+2004,27,CT,09009,WNV,Culex pipiens
+2004,3,CT,09009,WNV,Culex restuans
+2004,4,CT,09009,WNV,Culex salinarius
+2004,1,MA,25005,WNV,Culex restuans
+2004,1,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2004,3,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2004,1,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2004,3,MA,25025,WNV,Culex pipiens
+2004,1,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2004,4,MA,25025,WNV,Culex restuans
+2004,1,MA,25025,WNV,Culex sp.
+2004,7,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2005,22,CT,09001,WNV,Culex pipiens
+2005,1,CT,09001,WNV,Culex restuans
+2005,1,CT,09001,WNV,Culex salinarius
+2005,1,CT,09001,WNV,Culiseta melanura
+2005,1,CT,09009,WNV,Aedes triseriatus
+2005,7,CT,09009,WNV,Culex pipiens
+2005,1,CT,09009,WNV,Culex salinarius
+2005,2,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2005,2,MA,25005,WNV,Aedes j. japonicus
+2005,1,MA,25005,WNV,Aedes vexans
+2005,9,MA,25005,WNV,Culex pipiens
+2005,3,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2005,2,MA,25005,WNV,Culex restuans
+2005,1,MA,25005,WNV,Culex salinarius
+2005,4,MA,25005,WNV,Culiseta melanura
+2005,8,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2005,21,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2005,2,MA,25017,WNV,Culex sp.
+2005,3,MA,25021,WNV,Culex pipiens
+2005,13,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2005,1,MA,25021,WNV,Culex salinarius
+2005,6,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2005,1,MA,25023,WNV,Culex salinarius
+2005,1,MA,25023,WNV,Culiseta melanura
+2005,1,MA,25025,WNV,Culex pipiens
+2005,12,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2005,1,MA,25025,WNV,Culex salinarius
+2005,1,MA,25025,WNV,Culex sp.
+2005,1,MA,25027,WNV,Culex salinarius
+2005,2,MA,25027,WNV,Culex sp.
+2005,1,MA,25027,WNV,Culiseta melanura
+2005,1,NH,33011,WNV,Aedes triseriatus
+2005,1,RI,44007,WNV,Aedes vexans
+2005,2,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2006,2,CT,09001,WNV,Aedes vexans
+2006,29,CT,09001,WNV,Culex pipiens
+2006,7,CT,09001,WNV,Culex restuans
+2006,2,CT,09001,WNV,Culex salinarius
+2006,1,CT,09001,WNV,Culiseta melanura
+2006,5,CT,09003,WNV,Culex pipiens
+2006,4,CT,09003,WNV,Culex restuans
+2006,1,CT,09007,WNV,Culex pipiens
+2006,1,CT,09007,WNV,Culex restuans
+2006,1,CT,09009,WNV,Aedes triseriatus
+2006,1,CT,09009,WNV,Coquillettidia perturbans
+2006,144,CT,09009,WNV,Culex pipiens
+2006,7,CT,09009,WNV,Culex restuans
+2006,13,CT,09009,WNV,Culex salinarius
+2006,1,CT,09011,WNV,Culiseta melanura
+2006,2,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2006,2,MA,25005,WNV,Culex pipiens
+2006,2,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2006,7,MA,25005,WNV,Culiseta melanura
+2006,2,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2006,2,MA,25009,WNV,Culex sp.
+2006,8,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2006,7,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2006,1,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2006,5,MA,25023,WNV,Culiseta melanura
+2006,1,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2006,2,MA,25025,WNV,Culex sp.
+2006,1,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2006,1,MA,25027,WNV,Culiseta melanura
+2006,4,RI,44001,WNV,Culex pipiens
+2006,1,RI,44005,WNV,Culex pipiens
+2006,1,RI,44007,WNV,Culex pipiens
+2006,1,RI,44009,WNV,Coquillettidia perturbans
+2006,3,RI,44009,WNV,Culex pipiens
+2007,1,CT,09001,WNV,Aedes taeniorhynchus
+2007,41,CT,09001,WNV,Culex pipiens
+2007,8,CT,09003,WNV,Culex pipiens
+2007,1,CT,09009,WNV,Aedes c. canadensis
+2007,16,CT,09009,WNV,Culex pipiens
+2007,1,CT,09009,WNV,Culex restuans
+2007,1,CT,09009,WNV,Culex salinarius
+2007,1,MA,25005,WNV,Aedes j. japonicus
+2007,6,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2007,2,MA,25005,WNV,Culiseta melanura
+2007,15,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2007,5,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2007,12,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2007,12,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2007,1,MA,25023,WNV,Culiseta melanura
+2007,10,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2007,1,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2007,1,RI,44001,WNV,Culex pipiens
+2007,1,RI,44007,WNV,Aedes j. japonicus
+2007,3,RI,44007,WNV,Culex pipiens
+2008,1,CT,09001,WNV,Aedes j. japonicus
+2008,1,CT,09001,WNV,Aedes trivittatus
+2008,95,CT,09001,WNV,Culex pipiens
+2008,31,CT,09001,WNV,Culex restuans
+2008,5,CT,09001,WNV,Culex salinarius
+2008,1,CT,09001,WNV,Culex territans
+2008,2,CT,09001,WNV,Culiseta melanura
+2008,1,CT,09003,WNV,Aedes cinereus
+2008,6,CT,09003,WNV,Culex pipiens
+2008,8,CT,09003,WNV,Culex restuans
+2008,1,CT,09007,WNV,Culex pipiens
+2008,1,CT,09009,WNV,Aedes stimulans
+2008,21,CT,09009,WNV,Culex pipiens
+2008,9,CT,09009,WNV,Culex restuans
+2008,4,CT,09009,WNV,Culex salinarius
+2008,1,CT,09009,WNV,Culiseta melanura
+2008,1,CT,09011,WNV,Culex pipiens
+2008,1,CT,09011,WNV,Culex salinarius
+2008,1,CT,09011,WNV,Culiseta melanura
+2008,1,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2008,18,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2008,2,MA,25005,WNV,Culiseta melanura
+2008,1,MA,25009,WNV,Culex pipiens
+2008,3,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2008,2,MA,25009,WNV,Culiseta melanura
+2008,1,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2008,3,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2008,2,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2008,14,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2008,34,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2008,6,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2008,1,MA,25023,WNV,Culiseta melanura
+2008,33,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2008,1,MA,25027,WNV,Aedes j. japonicus
+2008,12,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2008,1,MA,25027,WNV,Culex salinarius
+2008,1,MA,25027,WNV,Culiseta melanura
+2008,1,NH,33015,WNV,Culiseta melanura
+2008,1,RI,44007,WNV,Aedes triseriatus
+2008,7,RI,44007,WNV,Culex pipiens
+2008,1,RI,44007,WNV,Culiseta morsitans
+2008,1,RI,44009,WNV,Coquillettidia perturbans
+2008,1,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2009,9,CT,09001,WNV,Culex pipiens
+2009,1,CT,09001,WNV,Culex restuans
+2009,3,CT,09001,WNV,Culiseta melanura
+2009,1,CT,09003,WNV,Culex pipiens
+2009,1,CT,09007,WNV,Aedes stimulans
+2009,1,CT,09007,WNV,Culex pipiens
+2009,13,CT,09009,WNV,Culex pipiens
+2009,2,CT,09009,WNV,Culex restuans
+2009,1,CT,09009,WNV,Culex salinarius
+2009,2,CT,09009,WNV,Culiseta melanura
+2009,1,CT,09011,WNV,Culex pipiens
+2009,1,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2009,1,MA,25005,WNV,Aedes c. canadensis
+2009,4,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2009,4,MA,25005,WNV,Culiseta melanura
+2009,2,MA,25009,WNV,Culiseta melanura
+2009,1,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2009,1,MA,25017,WNV,Culex sp.
+2009,5,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2009,1,MA,25021,WNV,Culiseta melanura
+2009,1,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2009,1,MA,25023,WNV,Culiseta melanura
+2009,1,MA,25025,WNV,Culex sp.
+2009,1,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2009,2,MA,25027,WNV,Culex sp.
+2009,1,ME,23031,WNV,Culiseta melanura
+2009,3,RI,44007,WNV,Culex pipiens
+2009,5,VT,50001,WNV,Culiseta melanura
+2009,1,VT,50001,WNV,Culiseta morsitans
+2009,1,VT,50011,WNV,Culex pipiens
+2009,3,VT,50021,WNV,Culiseta melanura
+2009,1,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2009,1,VT,50025,WNV,Culiseta melanura
+2010,3,CT,09001,WNV,Aedes j. japonicus
+2010,1,CT,09001,WNV,Aedes taeniorhynchus
+2010,111,CT,09001,WNV,Culex pipiens
+2010,14,CT,09001,WNV,Culex restuans
+2010,6,CT,09001,WNV,Culex salinarius
+2010,1,CT,09001,WNV,Culiseta melanura
+2010,1,CT,09001,WNV,Uranotaenia sapphirina
+2010,1,CT,09003,WNV,Aedes j. japonicus
+2010,1,CT,09003,WNV,Aedes triseriatus
+2010,8,CT,09003,WNV,Culex pipiens
+2010,1,CT,09003,WNV,Culex restuans
+2010,2,CT,09009,WNV,Aedes vexans
+2010,50,CT,09009,WNV,Culex pipiens
+2010,10,CT,09009,WNV,Culex restuans
+2010,9,CT,09009,WNV,Culex salinarius
+2010,1,CT,09011,WNV,Culex pipiens
+2010,11,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2010,3,MA,25005,WNV,Culiseta melanura
+2010,1,MA,25009,WNV,Culex pipiens
+2010,15,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2010,22,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2010,2,MA,25017,WNV,Culex sp.
+2010,17,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2010,1,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2010,3,MA,25023,WNV,Culiseta melanura
+2010,12,MA,25025,WNV,Culex pipiens
+2010,19,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2010,1,MA,25027,WNV,Coquillettidia perturbans
+2010,5,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2010,9,MA,25027,WNV,Culex sp.
+2010,1,ME,23031,WNV,Aedes vexans
+2010,1,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2010,1,RI,44007,WNV,Culex pipiens
+2010,1,RI,44009,WNV,Culiseta melanura
+2010,3,VT,50001,WNV,Culiseta melanura
+2010,3,VT,50001,WNV,Culiseta morsitans
+2010,3,VT,50021,WNV,Culiseta melanura
+2011,1,CT,09001,WNV,Coquillettidia perturbans
+2011,91,CT,09001,WNV,Culex pipiens
+2011,16,CT,09001,WNV,Culex restuans
+2011,3,CT,09001,WNV,Culex salinarius
+2011,4,CT,09001,WNV,Culiseta melanura
+2011,3,CT,09003,WNV,Culex pipiens
+2011,3,CT,09003,WNV,Culex restuans
+2011,1,CT,09005,WNV,Culex pipiens
+2011,2,CT,09007,WNV,Culex restuans
+2011,1,CT,09009,WNV,Coquillettidia perturbans
+2011,18,CT,09009,WNV,Culex pipiens
+2011,5,CT,09009,WNV,Culex restuans
+2011,9,CT,09009,WNV,Culex salinarius
+2011,2,CT,09011,WNV,Culex pipiens
+2011,3,CT,09011,WNV,Culiseta melanura
+2011,1,CT,09013,WNV,Culex pipiens
+2011,1,CT,09013,WNV,Culex restuans
+2011,1,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25005,WNV,Aedes vexans
+2011,15,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2011,2,MA,25005,WNV,Culex sp.
+2011,10,MA,25005,WNV,Culiseta melanura
+2011,1,MA,25007,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25009,WNV,Aedes j. japonicus
+2011,46,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25009,WNV,Culex salinarius
+2011,6,MA,25009,WNV,Culiseta melanura
+2011,1,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25017,WNV,Coquillettidia perturbans
+2011,17,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2011,10,MA,25017,WNV,Culex sp.
+2011,57,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2011,3,MA,25021,WNV,Culiseta melanura
+2011,8,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2011,1,MA,25023,WNV,Culex sp.
+2011,5,MA,25023,WNV,Culiseta melanura
+2011,1,MA,25025,WNV,Culex pipiens
+2011,74,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2011,2,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2011,10,MA,25027,WNV,Culex sp.
+2011,1,NH,33005,WNV,Culex salinarius
+2011,1,NH,33011,WNV,Aedes c. canadensis
+2011,4,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2011,1,NH,33011,WNV,Culex restuans
+2011,2,NH,33015,WNV,Culiseta melanura
+2011,1,RI,44005,WNV,Culiseta sp.
+2011,1,RI,44007,WNV,Culex sp.
+2011,1,VT,50001,WNV,Culiseta melanura
+2011,1,VT,50001,WNV,Culiseta morsitans
+2011,1,VT,50021,WNV,Culiseta melanura
+2012,1,CT,09001,WNV,Aedes cinereus
+2012,1,CT,09001,WNV,Aedes vexans
+2012,1,CT,09001,WNV,Coquillettidia perturbans
+2012,119,CT,09001,WNV,Culex pipiens
+2012,9,CT,09001,WNV,Culex restuans
+2012,2,CT,09001,WNV,Culex salinarius
+2012,6,CT,09001,WNV,Culiseta melanura
+2012,17,CT,09003,WNV,Culex pipiens
+2012,1,CT,09003,WNV,Culex restuans
+2012,2,CT,09007,WNV,Culex pipiens
+2012,2,CT,09007,WNV,Culex restuans
+2012,3,CT,09007,WNV,Culiseta melanura
+2012,2,CT,09009,WNV,Coquillettidia perturbans
+2012,53,CT,09009,WNV,Culex pipiens
+2012,6,CT,09009,WNV,Culex restuans
+2012,4,CT,09009,WNV,Culex salinarius
+2012,1,CT,09009,WNV,Culiseta melanura
+2012,4,CT,09011,WNV,Culex pipiens
+2012,1,CT,09011,WNV,Culiseta melanura
+2012,1,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2012,1,MA,25001,WNV,Culiseta melanura
+2012,29,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2012,42,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2012,7,MA,25005,WNV,Culiseta melanura
+2012,1,MA,25009,WNV,Coquillettidia perturbans
+2012,24,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2012,2,MA,25009,WNV,Culex salinarius
+2012,4,MA,25009,WNV,Culiseta melanura
+2012,43,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2012,26,MA,25017,WNV,Culex sp.
+2012,1,MA,25017,WNV,Culiseta melanura
+2012,15,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2012,3,MA,25021,WNV,Culiseta melanura
+2012,1,MA,25023,WNV,Aedes vexans
+2012,4,MA,25023,WNV,Coquillettidia perturbans
+2012,8,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2012,3,MA,25023,WNV,Culex salinarius
+2012,13,MA,25023,WNV,Culiseta melanura
+2012,40,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2012,1,MA,25027,WNV,Aedes vexans
+2012,2,MA,25027,WNV,Coquillettidia perturbans
+2012,1,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2012,34,MA,25027,WNV,Culex sp.
+2012,1,MA,25027,WNV,Culiseta melanura
+2012,1,ME,23005,WNV,Culex pipiens-restuans (Mixed)
+2012,4,ME,23005,WNV,Culiseta melanura
+2012,1,ME,23031,WNV,Culex pipiens-restuans (Mixed)
+2012,1,ME,23031,WNV,Culiseta melanura
+2012,1,NH,33011,WNV,Aedes j. japonicus
+2012,1,NH,33011,WNV,Aedes triseriatus
+2012,1,NH,33011,WNV,Aedes vexans
+2012,2,NH,33011,WNV,Coquillettidia perturbans
+2012,3,NH,33011,WNV,Culex pipiens
+2012,20,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2012,2,NH,33011,WNV,Culex restuans
+2012,1,NH,33015,WNV,Coquillettidia perturbans
+2012,3,NH,33015,WNV,Culex pipiens
+2012,4,NH,33015,WNV,Culex pipiens-restuans (Mixed)
+2012,2,NH,33015,WNV,Culex salinarius
+2012,1,NH,33015,WNV,Culiseta melanura
+2012,2,RI,44007,WNV,Culex sp.
+2012,1,RI,44009,WNV,Aedes cantator
+2012,2,RI,44009,WNV,Culex sp.
+2012,1,VT,50001,WNV,Aedes c. canadensis
+2013,35,CT,09001,WNV,Culex pipiens
+2013,10,CT,09001,WNV,Culex restuans
+2013,2,CT,09001,WNV,Culex salinarius
+2013,1,CT,09003,WNV,Aedes vexans
+2013,3,CT,09003,WNV,Culex pipiens
+2013,9,CT,09003,WNV,Culex restuans
+2013,7,CT,09009,WNV,Culex pipiens
+2013,3,CT,09009,WNV,Culex restuans
+2013,2,CT,09009,WNV,Culex salinarius
+2013,1,CT,09011,WNV,Culex pipiens
+2013,9,CT,09011,WNV,Culex restuans
+2013,1,CT,09011,WNV,Culex salinarius
+2013,4,CT,09011,WNV,Culiseta melanura
+2013,1,CT,09011,WNV,Psorophora ferox
+2013,1,CT,09013,WNV,Culex restuans
+2013,1,CT,09015,WNV,Culex restuans
+2013,12,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2013,2,MA,25001,WNV,Culiseta melanura
+2013,15,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2013,1,MA,25005,WNV,Aedes c. canadensis
+2013,1,MA,25005,WNV,Aedes vexans
+2013,3,MA,25005,WNV,Coquillettidia perturbans
+2013,37,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2013,1,MA,25005,WNV,Culex salinarius
+2013,36,MA,25005,WNV,Culiseta melanura
+2013,3,MA,25007,WNV,Culex pipiens-restuans (Mixed)
+2013,16,MA,25009,WNV,Culex pipiens
+2013,46,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2013,1,MA,25009,WNV,Culex restuans
+2013,10,MA,25009,WNV,Culiseta melanura
+2013,1,MA,25009,WNV,Culiseta morsitans
+2013,8,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2013,1,MA,25017,WNV,Coquillettidia perturbans
+2013,32,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2013,8,MA,25017,WNV,Culex sp.
+2013,1,MA,25021,WNV,Aedes sollicitans
+2013,1,MA,25021,WNV,Aedes taeniorhynchus
+2013,1,MA,25021,WNV,Aedes vexans
+2013,2,MA,25021,WNV,Coquillettidia perturbans
+2013,21,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2013,3,MA,25021,WNV,Culiseta melanura
+2013,1,MA,25023,WNV,Aedes c. canadensis
+2013,9,MA,25023,WNV,Coquillettidia perturbans
+2013,14,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2013,2,MA,25023,WNV,Culex salinarius
+2013,1,MA,25023,WNV,Culex sp.
+2013,21,MA,25023,WNV,Culiseta melanura
+2013,17,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2013,2,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2013,4,MA,25027,WNV,Culex sp.
+2013,1,MA,25027,WNV,Culiseta melanura
+2013,2,ME,23031,WNV,Culiseta melanura
+2013,1,NH,33005,WNV,Culex pipiens
+2013,1,NH,33011,WNV,Aedes c. canadensis
+2013,2,NH,33011,WNV,Culex pipiens
+2013,1,NH,33011,WNV,Culiseta melanura
+2013,3,NH,33015,WNV,Culex pipiens
+2013,1,NH,33015,WNV,Culex pipiens-restuans (Mixed)
+2013,1,NH,33015,WNV,Culex restuans
+2013,1,NH,33015,WNV,Culex salinarius
+2013,3,NH,33015,WNV,Culiseta melanura
+2013,1,RI,44001,WNV,Culex sp.
+2013,3,RI,44007,WNV,Culex sp.
+2013,1,RI,44009,WNV,Aedes taeniorhynchus
+2013,1,RI,44009,WNV,Culex sp.
+2013,2,RI,44009,WNV,Culiseta sp.
+2013,4,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2013,10,VT,50001,WNV,Culiseta melanura
+2013,1,VT,50001,WNV,Culiseta morsitans
+2013,1,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2013,1,VT,50007,WNV,Culiseta melanura
+2013,2,VT,50011,WNV,Culiseta melanura
+2013,1,VT,50013,WNV,Culiseta melanura
+2013,1,VT,50021,WNV,Aedes vexans
+2013,6,VT,50021,WNV,Culex pipiens-restuans (Mixed)
+2013,1,VT,50021,WNV,Culiseta melanura
+2014,1,CT,09001,WNV,Aedes trivittatus
+2014,1,CT,09001,WNV,Aedes vexans
+2014,1,CT,09001,WNV,Coquillettidia perturbans
+2014,44,CT,09001,WNV,Culex pipiens
+2014,4,CT,09001,WNV,Culex restuans
+2014,1,CT,09001,WNV,Culex salinarius
+2014,4,CT,09003,WNV,Culex pipiens
+2014,1,CT,09003,WNV,Culex restuans
+2014,1,CT,09005,WNV,Culiseta melanura
+2014,3,CT,09009,WNV,Culex pipiens
+2014,2,CT,09009,WNV,Culex restuans
+2014,1,CT,09009,WNV,Culex salinarius
+2014,1,CT,09011,WNV,Culex pipiens
+2014,3,CT,09011,WNV,Culex restuans
+2014,1,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2014,2,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2014,6,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2014,2,MA,25005,WNV,Culiseta melanura
+2014,1,MA,25009,WNV,Aedes triseriatus
+2014,1,MA,25009,WNV,Coquillettidia perturbans
+2014,4,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2014,1,MA,25009,WNV,Culex salinarius
+2014,12,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2014,2,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2014,4,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2014,1,MA,25025,WNV,Culex pipiens
+2014,16,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2014,1,MA,25025,WNV,Culex sp.
+2014,1,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2014,1,MA,25027,WNV,Culex sp.
+2014,1,NH,33015,WNV,Culiseta melanura
+2014,2,RI,44009,WNV,Culex sp.
+2014,1,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2014,1,VT,50017,WNV,Coquillettidia perturbans
+2014,1,VT,50025,WNV,Aedes j. japonicus
+2014,3,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2014,1,VT,50025,WNV,Culex salinarius
+2014,1,VT,50027,WNV,Culex pipiens-restuans (Mixed)
+2015,1,CT,09001,WNV,Aedes taeniorhynchus
+2015,1,CT,09001,WNV,Aedes triseriatus
+2015,2,CT,09001,WNV,Aedes vexans
+2015,65,CT,09001,WNV,Culex pipiens
+2015,5,CT,09001,WNV,Culex restuans
+2015,14,CT,09001,WNV,Culex salinarius
+2015,1,CT,09003,WNV,Aedes j. japonicus
+2015,5,CT,09003,WNV,Culex pipiens
+2015,1,CT,09003,WNV,Culex restuans
+2015,3,CT,09003,WNV,Culex salinarius
+2015,1,CT,09007,WNV,Culex restuans
+2015,1,CT,09007,WNV,Culiseta melanura
+2015,34,CT,09009,WNV,Culex pipiens
+2015,5,CT,09009,WNV,Culex restuans
+2015,8,CT,09009,WNV,Culex salinarius
+2015,1,CT,09009,WNV,Culiseta melanura
+2015,1,CT,09011,WNV,Anopheles punctipennis
+2015,3,CT,09011,WNV,Culex pipiens
+2015,4,CT,09011,WNV,Culex restuans
+2015,1,CT,09015,WNV,Culex pipiens
+2015,2,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2015,8,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2015,12,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2015,1,MA,25005,WNV,Culex salinarius
+2015,1,MA,25005,WNV,Culiseta melanura
+2015,2,MA,25009,WNV,Culex pipiens
+2015,2,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2015,3,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2015,3,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2015,67,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2015,16,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2015,1,MA,25021,WNV,Culiseta melanura
+2015,4,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2015,2,MA,25023,WNV,Culiseta melanura
+2015,3,MA,25025,WNV,Culex pipiens
+2015,19,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2015,2,MA,25025,WNV,Culex salinarius
+2015,1,MA,25027,WNV,Coquillettidia perturbans
+2015,14,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2015,1,MA,25027,WNV,Culiseta melanura
+2015,1,ME,23031,WNV,Culiseta melanura
+2015,1,NH,33005,WNV,Aedes vexans
+2015,1,NH,33011,WNV,Culex restuans
+2015,1,NH,33015,WNV,Culiseta morsitans
+2015,1,RI,44005,WNV,Culex sp.
+2015,1,RI,44007,WNV,Culex sp.
+2015,2,RI,44009,WNV,Culex sp.
+2015,16,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50001,WNV,Culiseta melanura
+2015,2,VT,50003,WNV,Culex pipiens-restuans (Mixed)
+2015,13,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50007,WNV,Culiseta melanura
+2015,3,VT,50011,WNV,Aedes j. japonicus
+2015,12,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50015,WNV,Aedes trivittatus
+2015,3,VT,50015,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50019,WNV,Aedes trivittatus
+2015,4,VT,50019,WNV,Culex pipiens-restuans (Mixed)
+2015,3,VT,50019,WNV,Culiseta melanura
+2015,1,VT,50021,WNV,Aedes trivittatus
+2015,4,VT,50021,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50021,WNV,Culiseta morsitans
+2015,1,VT,50023,WNV,Aedes j. japonicus
+2015,6,VT,50023,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50025,WNV,Aedes c. canadensis
+2015,4,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2015,1,VT,50027,WNV,Aedes j. japonicus
+2015,11,VT,50027,WNV,Culex pipiens-restuans (Mixed)
+2016,1,CT,09001,WNV,Aedes albopictus
+2016,72,CT,09001,WNV,Culex pipiens
+2016,4,CT,09001,WNV,Culex restuans
+2016,1,CT,09001,WNV,Culiseta morsitans
+2016,1,CT,09003,WNV,Aedes j. japonicus
+2016,1,CT,09003,WNV,Anopheles punctipennis
+2016,1,CT,09003,WNV,Anopheles quadrimaculatus s.l.
+2016,17,CT,09003,WNV,Culex pipiens
+2016,2,CT,09003,WNV,Culex restuans
+2016,1,CT,09003,WNV,Culex salinarius
+2016,1,CT,09007,WNV,Anopheles walkeri
+2016,17,CT,09009,WNV,Culex pipiens
+2016,1,CT,09009,WNV,Culex restuans
+2016,2,CT,09011,WNV,Culex pipiens
+2016,1,NH,33011,WNV,Culex pipiens
+2016,1,RI,44007,WNV,Culex sp.
+2016,4,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2016,1,VT,50005,WNV,Culex pipiens-restuans (Mixed)
+2016,5,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2016,8,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2016,1,VT,50027,WNV,Culex pipiens-restuans (Mixed)
+2017,1,CT,09001,WNV,Aedes c. canadensis
+2017,1,CT,09001,WNV,Aedes taeniorhynchus
+2017,43,CT,09001,WNV,Culex pipiens
+2017,8,CT,09001,WNV,Culex restuans
+2017,4,CT,09001,WNV,Culex salinarius
+2017,1,CT,09001,WNV,Culiseta melanura
+2017,1,CT,09001,WNV,Psorophora ferox
+2017,1,CT,09003,WNV,Anopheles punctipennis
+2017,7,CT,09003,WNV,Culex pipiens
+2017,1,CT,09003,WNV,Culex restuans
+2017,1,CT,09003,WNV,Culex salinarius
+2017,5,CT,09007,WNV,Culex salinarius
+2017,21,CT,09009,WNV,Culex pipiens
+2017,5,CT,09009,WNV,Culex restuans
+2017,6,CT,09009,WNV,Culex salinarius
+2017,1,CT,09009,WNV,Culiseta melanura
+2017,1,CT,09011,WNV,Anopheles crucians complex
+2017,3,CT,09011,WNV,Culex pipiens
+2017,8,CT,09011,WNV,Culex restuans
+2017,1,CT,09011,WNV,Culex salinarius
+2017,1,CT,09011,WNV,Culex territans
+2017,2,CT,09011,WNV,Culiseta melanura
+2017,1,CT,09015,WNV,Culex pipiens
+2017,1,CT,09015,WNV,Culiseta melanura
+2017,1,MA,25001,WNV,Aedes j. japonicus
+2017,8,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2017,30,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2017,2,MA,25005,WNV,Aedes c. canadensis
+2017,5,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2017,3,MA,25005,WNV,Culiseta melanura
+2017,2,MA,25009,WNV,Coquillettidia perturbans
+2017,14,MA,25009,WNV,Culex pipiens
+2017,12,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2017,5,MA,25009,WNV,Culex salinarius
+2017,20,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2017,33,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2017,2,MA,25013,WNV,Culex sp.
+2017,16,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2017,44,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2017,11,MA,25017,WNV,Culex sp.
+2017,2,MA,25021,WNV,Coquillettidia perturbans
+2017,9,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2017,1,MA,25023,WNV,Aedes c. canadensis
+2017,14,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2017,2,MA,25023,WNV,Culiseta melanura
+2017,26,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2017,19,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2017,9,MA,25027,WNV,Culex sp.
+2017,1,NH,33005,WNV,Culex restuans
+2017,1,NH,33011,WNV,Culex pipiens
+2017,2,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2017,1,NH,33015,WNV,Culex salinarius
+2017,3,NH,33015,WNV,Culiseta melanura
+2017,1,NH,33017,WNV,Culiseta melanura
+2017,3,RI,44001,WNV,Culex sp.
+2017,2,VT,50001,WNV,Aedes cinereus
+2017,1,VT,50001,WNV,Aedes vexans
+2017,1,VT,50001,WNV,Anopheles punctipennis
+2017,1,VT,50001,WNV,Anopheles quadrimaculatus s.l.
+2017,3,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2017,3,VT,50001,WNV,Culiseta melanura
+2017,3,VT,50001,WNV,Culiseta morsitans
+2017,1,VT,50001,WNV,Other Species / Unknown
+2017,2,VT,50003,WNV,Coquillettidia perturbans
+2017,2,VT,50003,WNV,Other Species / Unknown
+2017,1,VT,50005,WNV,Culex pipiens-restuans (Mixed)
+2017,2,VT,50007,WNV,Coquillettidia perturbans
+2017,17,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2017,1,VT,50007,WNV,Other Species / Unknown
+2017,1,VT,50011,WNV,Coquillettidia perturbans
+2017,3,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2017,3,VT,50011,WNV,Culiseta melanura
+2017,1,VT,50015,WNV,Culex pipiens-restuans (Mixed)
+2017,1,VT,50017,WNV,Coquillettidia perturbans
+2017,1,VT,50019,WNV,Culiseta morsitans
+2017,1,VT,50021,WNV,Anopheles punctipennis
+2017,1,VT,50021,WNV,Coquillettidia perturbans
+2017,3,VT,50021,WNV,Culex pipiens-restuans (Mixed)
+2017,1,VT,50021,WNV,Culex territans
+2017,1,VT,50021,WNV,Culiseta melanura
+2017,1,VT,50021,WNV,Other Species / Unknown
+2017,1,VT,50023,WNV,Coquillettidia perturbans
+2017,9,VT,50023,WNV,Culex pipiens-restuans (Mixed)
+2017,1,VT,50023,WNV,Other Species / Unknown
+2017,2,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2017,17,VT,50027,WNV,Culex pipiens-restuans (Mixed)
+2017,1,VT,50027,WNV,Other Species / Unknown
+2018,1,CT,09001,WNV,Aedes albopictus
+2018,1,CT,09001,WNV,Aedes c. canadensis
+2018,2,CT,09001,WNV,Aedes cinereus
+2018,3,CT,09001,WNV,Aedes j. japonicus
+2018,1,CT,09001,WNV,Aedes taeniorhynchus
+2018,2,CT,09001,WNV,Coquillettidia perturbans
+2018,167,CT,09001,WNV,Culex pipiens
+2018,39,CT,09001,WNV,Culex restuans
+2018,14,CT,09001,WNV,Culex salinarius
+2018,18,CT,09001,WNV,Culiseta melanura
+2018,1,CT,09001,WNV,Psorophora ferox
+2018,1,CT,09003,WNV,Anopheles punctipennis
+2018,1,CT,09003,WNV,Coquillettidia perturbans
+2018,26,CT,09003,WNV,Culex pipiens
+2018,7,CT,09003,WNV,Culex restuans
+2018,1,CT,09003,WNV,Culex salinarius
+2018,3,CT,09003,WNV,Culiseta melanura
+2018,3,CT,09007,WNV,Aedes c. canadensis
+2018,1,CT,09007,WNV,Aedes cinereus
+2018,2,CT,09007,WNV,Culex pipiens
+2018,3,CT,09007,WNV,Culex restuans
+2018,3,CT,09007,WNV,Culex salinarius
+2018,4,CT,09007,WNV,Culiseta melanura
+2018,1,CT,09009,WNV,Aedes c. canadensis
+2018,2,CT,09009,WNV,Aedes cinereus
+2018,1,CT,09009,WNV,Aedes triseriatus
+2018,1,CT,09009,WNV,Coquillettidia perturbans
+2018,43,CT,09009,WNV,Culex pipiens
+2018,19,CT,09009,WNV,Culex restuans
+2018,6,CT,09009,WNV,Culex salinarius
+2018,5,CT,09009,WNV,Culiseta melanura
+2018,1,CT,09011,WNV,Aedes cinereus
+2018,4,CT,09011,WNV,Culex pipiens
+2018,2,CT,09011,WNV,Culex restuans
+2018,3,CT,09011,WNV,Culiseta melanura
+2018,1,CT,09015,WNV,Culiseta melanura
+2018,23,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2018,4,MA,25001,WNV,Culiseta melanura
+2018,1,MA,25003,WNV,Coquillettidia perturbans
+2018,57,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25003,WNV,Culiseta melanura
+2018,1,MA,25005,WNV,Aedes c. canadensis
+2018,38,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2018,23,MA,25005,WNV,Culiseta melanura
+2018,2,MA,25007,WNV,Culex pipiens-restuans (Mixed)
+2018,7,MA,25009,WNV,Culex pipiens
+2018,2,MA,25009,WNV,Culex pipiens-restuans (Mixed)
+2018,9,MA,25009,WNV,Culex salinarius
+2018,1,MA,25011,WNV,Aedes provocans
+2018,43,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2018,2,MA,25013,WNV,Aedes j. japonicus
+2018,25,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25015,WNV,Coquillettidia perturbans
+2018,22,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25017,WNV,Aedes c. canadensis
+2018,1,MA,25017,WNV,Aedes vexans
+2018,1,MA,25017,WNV,Anopheles quadrimaculatus s.l.
+2018,1,MA,25017,WNV,Coquillettidia perturbans
+2018,61,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2018,45,MA,25017,WNV,Culex sp.
+2018,34,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25023,WNV,Aedes c. canadensis
+2018,1,MA,25023,WNV,Aedes j. japonicus
+2018,2,MA,25023,WNV,Coquillettidia perturbans
+2018,13,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25023,WNV,Culex salinarius
+2018,13,MA,25023,WNV,Culiseta melanura
+2018,2,MA,25025,WNV,Aedes j. japonicus
+2018,25,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2018,1,MA,25027,WNV,Coquillettidia perturbans
+2018,5,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2018,109,MA,25027,WNV,Culex sp.
+2018,2,ME,23019,WNV,Culex pipiens-restuans (Mixed)
+2018,1,ME,23031,WNV,Culex pipiens
+2018,1,ME,23031,WNV,Culiseta melanura
+2018,1,NH,33005,WNV,Culex pipiens
+2018,1,NH,33005,WNV,Culex salinarius
+2018,1,NH,33011,WNV,Aedes c. canadensis
+2018,1,NH,33011,WNV,Aedes cinereus
+2018,2,NH,33011,WNV,Coquillettidia perturbans
+2018,3,NH,33011,WNV,Culex pipiens
+2018,5,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2018,1,NH,33011,WNV,Psorophora ferox
+2018,1,NH,33015,WNV,Aedes cinereus
+2018,1,NH,33015,WNV,Coquillettidia perturbans
+2018,1,NH,33015,WNV,Culex pipiens
+2018,1,NH,33015,WNV,Culex restuans
+2018,3,NH,33015,WNV,Culex salinarius
+2018,9,NH,33015,WNV,Culiseta melanura
+2018,1,NH,33015,WNV,Culiseta morsitans
+2018,1,RI,44001,WNV,Culex sp.
+2018,2,RI,44005,WNV,Culex sp.
+2018,1,RI,44005,WNV,Culiseta morsitans
+2018,5,RI,44007,WNV,Culex sp.
+2018,1,RI,44009,WNV,Culiseta morsitans
+2018,1,VT,50001,WNV,Aedes cinereus
+2018,2,VT,50001,WNV,Aedes trivittatus
+2018,3,VT,50001,WNV,Aedes vexans
+2018,1,VT,50001,WNV,Coquillettidia perturbans
+2018,7,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2018,1,VT,50001,WNV,Culiseta melanura
+2018,2,VT,50001,WNV,Culiseta morsitans
+2018,1,VT,50003,WNV,Aedes j. japonicus
+2018,1,VT,50003,WNV,Anopheles punctipennis
+2018,2,VT,50003,WNV,Coquillettidia perturbans
+2018,1,VT,50003,WNV,Culex pipiens-restuans (Mixed)
+2018,1,VT,50005,WNV,Culex pipiens-restuans (Mixed)
+2018,1,VT,50007,WNV,Aedes j. japonicus
+2018,24,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2018,2,VT,50007,WNV,Culiseta melanura
+2018,1,VT,50009,WNV,Aedes c. canadensis
+2018,1,VT,50011,WNV,Aedes j. japonicus
+2018,13,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2018,3,VT,50011,WNV,Culiseta melanura
+2018,1,VT,50011,WNV,Culiseta morsitans
+2018,1,VT,50013,WNV,Anopheles quadrimaculatus s.s.
+2018,1,VT,50013,WNV,Culiseta melanura
+2018,1,VT,50015,WNV,Culex pipiens-restuans (Mixed)
+2018,2,VT,50019,WNV,Culex pipiens-restuans (Mixed)
+2018,1,VT,50021,WNV,Aedes c. canadensis
+2018,1,VT,50021,WNV,Aedes j. japonicus
+2018,1,VT,50021,WNV,Anopheles quadrimaculatus s.s.
+2018,3,VT,50021,WNV,Coquillettidia perturbans
+2018,9,VT,50021,WNV,Culex pipiens-restuans (Mixed)
+2018,2,VT,50023,WNV,Culex pipiens-restuans (Mixed)
+2018,2,VT,50025,WNV,Aedes j. japonicus
+2018,18,VT,50025,WNV,Culex pipiens-restuans (Mixed)
+2018,8,VT,50027,WNV,Aedes j. japonicus
+2018,38,VT,50027,WNV,Culex pipiens-restuans (Mixed)
+2019,19,CT,09001,WNV,Culex pipiens
+2019,1,CT,09001,WNV,Culex restuans
+2019,1,CT,09001,WNV,Culex salinarius
+2019,2,CT,09001,WNV,Culiseta melanura
+2019,12,CT,09003,WNV,Culex pipiens
+2019,4,CT,09003,WNV,Culex restuans
+2019,1,CT,09003,WNV,Culex salinarius
+2019,1,CT,09007,WNV,Aedes c. canadensis
+2019,1,CT,09007,WNV,Culex pipiens
+2019,4,CT,09007,WNV,Culiseta melanura
+2019,3,CT,09009,WNV,Coquillettidia perturbans
+2019,16,CT,09009,WNV,Culex pipiens
+2019,4,CT,09009,WNV,Culex restuans
+2019,3,CT,09009,WNV,Culex salinarius
+2019,1,CT,09011,WNV,Aedes c. canadensis
+2019,1,CT,09011,WNV,Aedes vexans
+2019,1,CT,09011,WNV,Anopheles punctipennis
+2019,1,CT,09011,WNV,Culex pipiens
+2019,1,CT,09011,WNV,Culex restuans
+2019,4,CT,09011,WNV,Culiseta melanura
+2019,1,CT,09015,WNV,Culiseta morsitans
+2019,1,MA,25001,WNV,Culex salinarius
+2019,1,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2019,4,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2019,2,MA,25005,WNV,Culex salinarius
+2019,10,MA,25005,WNV,Culiseta melanura
+2019,3,MA,25009,WNV,Culex pipiens
+2019,1,MA,25009,WNV,Culex salinarius
+2019,1,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25015,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25017,WNV,Coquillettidia perturbans
+2019,11,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2019,3,MA,25017,WNV,Culex sp.
+2019,4,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25021,WNV,Culiseta melanura
+2019,6,MA,25023,WNV,Coquillettidia perturbans
+2019,4,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25023,WNV,Culex salinarius
+2019,9,MA,25023,WNV,Culiseta melanura
+2019,10,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2019,1,MA,25025,WNV,Culex salinarius
+2019,1,MA,25027,WNV,Aedes c. canadensis
+2019,1,MA,25027,WNV,Culex salinarius
+2019,6,MA,25027,WNV,Culex sp.
+2019,3,MA,25027,WNV,Culiseta melanura
+2019,1,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2019,2,RI,44005,WNV,Culex sp.
+2019,2,RI,44009,WNV,Culiseta melanura
+2019,1,VT,50001,WNV,Culex pipiens-restuans (Mixed)
+2019,2,VT,50007,WNV,Culex pipiens-restuans (Mixed)
+2019,1,VT,50011,WNV,Culex pipiens-restuans (Mixed)
+2019,1,VT,50019,WNV,Culex pipiens-restuans (Mixed)
+2020,1,CT,09001,WNV,Aedes j. japonicus
+2020,80,CT,09001,WNV,Culex pipiens
+2020,10,CT,09001,WNV,Culex restuans
+2020,1,CT,09001,WNV,Culex salinarius
+2020,31,CT,09003,WNV,Culex pipiens
+2020,5,CT,09003,WNV,Culex restuans
+2020,14,CT,09009,WNV,Culex pipiens
+2020,1,CT,09009,WNV,Culex restuans
+2020,11,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2020,1,MA,25005,WNV,Culiseta melanura
+2020,1,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2020,28,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2020,2,MA,25021,WNV,Coquillettidia perturbans
+2020,16,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2020,3,MA,25021,WNV,Culex salinarius
+2020,2,MA,25023,WNV,Coquillettidia perturbans
+2020,2,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2020,1,MA,25023,WNV,Culex salinarius
+2020,2,MA,25023,WNV,Culiseta melanura
+2020,2,MA,25025,WNV,Culex pipiens
+2020,26,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2020,1,NH,33011,WNV,Culex pipiens
+2020,1,NH,33011,WNV,Culex restuans
+2021,1,CT,09001,WNV,Aedes cinereus
+2021,1,CT,09001,WNV,Aedes j. japonicus
+2021,1,CT,09001,WNV,Aedes trivittatus
+2021,1,CT,09001,WNV,Aedes vexans
+2021,69,CT,09001,WNV,Culex pipiens
+2021,17,CT,09001,WNV,Culex restuans
+2021,5,CT,09001,WNV,Culex salinarius
+2021,4,CT,09001,WNV,Culiseta melanura
+2021,2,CT,09003,WNV,Aedes cinereus
+2021,19,CT,09003,WNV,Culex pipiens
+2021,17,CT,09003,WNV,Culex restuans
+2021,1,CT,09003,WNV,Culex salinarius
+2021,1,CT,09003,WNV,Culiseta melanura
+2021,1,CT,09003,WNV,Psorophora ferox
+2021,2,CT,09005,WNV,Culex restuans
+2021,1,CT,09005,WNV,Culiseta melanura
+2021,2,CT,09007,WNV,Culex restuans
+2021,1,CT,09007,WNV,Culiseta melanura
+2021,27,CT,09009,WNV,Culex pipiens
+2021,13,CT,09009,WNV,Culex restuans
+2021,1,CT,09009,WNV,Culex salinarius
+2021,1,CT,09009,WNV,Psorophora ferox
+2021,3,CT,09011,WNV,Aedes cinereus
+2021,2,CT,09011,WNV,Culex pipiens
+2021,3,CT,09011,WNV,Culex restuans
+2021,1,CT,09011,WNV,Culex salinarius
+2021,1,CT,09011,WNV,Culiseta melanura
+2021,6,CT,09011,WNV,Psorophora ferox
+2021,1,CT,09011,WNV,Uranotaenia sapphirina
+2021,1,CT,09013,WNV,Aedes trivittatus
+2021,1,CT,09013,WNV,Culex pipiens
+2021,1,CT,09015,WNV,Culex restuans
+2021,2,MA,25001,WNV,Culex pipiens-restuans (Mixed)
+2021,4,MA,25003,WNV,Culex pipiens-restuans (Mixed)
+2021,15,MA,25005,WNV,Culex pipiens-restuans (Mixed)
+2021,1,MA,25005,WNV,Culex salinarius
+2021,4,MA,25009,WNV,Aedes vexans
+2021,2,MA,25009,WNV,Culex pipiens
+2021,7,MA,25009,WNV,Culex salinarius
+2021,1,MA,25009,WNV,Culiseta melanura
+2021,1,MA,25009,WNV,Psorophora ferox
+2021,1,MA,25011,WNV,Culex pipiens-restuans (Mixed)
+2021,11,MA,25013,WNV,Culex pipiens-restuans (Mixed)
+2021,1,MA,25013,WNV,Culex salinarius
+2021,1,MA,25013,WNV,Culiseta melanura
+2021,2,MA,25015,WNV,Culex salinarius
+2021,1,MA,25017,WNV,Culex pipiens
+2021,31,MA,25017,WNV,Culex pipiens-restuans (Mixed)
+2021,1,MA,25017,WNV,Culiseta melanura
+2021,12,MA,25021,WNV,Culex pipiens-restuans (Mixed)
+2021,1,MA,25021,WNV,Culex salinarius
+2021,1,MA,25023,WNV,Aedes c. canadensis
+2021,3,MA,25023,WNV,Culex pipiens-restuans (Mixed)
+2021,2,MA,25023,WNV,Culiseta melanura
+2021,18,MA,25025,WNV,Culex pipiens-restuans (Mixed)
+2021,1,MA,25027,WNV,Aedes vexans
+2021,2,MA,25027,WNV,Culex pipiens
+2021,6,MA,25027,WNV,Culex pipiens-restuans (Mixed)
+2021,3,MA,25027,WNV,Culex restuans
+2021,2,MA,25027,WNV,Culex salinarius
+2021,1,MA,25027,WNV,Culex sp.
+2021,1,MA,25027,WNV,Culiseta melanura
+2021,2,NH,33011,WNV,Culex pipiens-restuans (Mixed)
+2021,2,NH,33015,WNV,Culex pipiens
+2021,2,NH,33015,WNV,Culiseta melanura
+2021,1,RI,44001,WNV,Culex sp.
+2021,2,RI,44007,WNV,Coquillettidia perturbans
+2021,2,RI,44007,WNV,Culex sp.
+2021,1,RI,44007,WNV,Culiseta melanura
