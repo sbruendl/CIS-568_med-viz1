@@ -1,0 +1,65 @@
+.geoPath{
+    fill:none;
+    stroke:black;
+    outline:bisque; 
+    stroke-width: .1em;
+}
+body{
+    margin: 0;
+    overflow: hidden;
+}
+.tab-content {
+    width: 100%;
+    height: 100%;
+}
+
+.dropdown {
+    text-align: center;
+}
+/*viz1*/
+.tooltipData{
+    font-family: sans-serif;
+    font-size: small;
+}
+#tooltip{
+    opacity: 0;
+    background-color: antiquewhite;
+    position: absolute;
+    width: auto;
+    height: auto;
+}
+
+#yearSelector{
+    position: absolute;
+    top: 20px;
+    left: 360px;
+}
+
+#caption{
+    font-family: sans-serif;
+    margin: auto;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 4%;
+    font-size: 24pt;
+}
+#container
+{
+    width: 90vw;
+    height: 80vh;
+}
+#geo
+{
+    height: 100vh;
+    background-color: azure;
+}
+path.path_geo{
+    stroke-width: .5px;
+    stroke: black;
+}
+
+/*viz2*/
+#bubble{
+    background-color: rgb(241, 248, 180);
+    height: 100vh;
+}
